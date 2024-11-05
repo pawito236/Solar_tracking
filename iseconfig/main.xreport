@@ -4,8 +4,8 @@
   <DateModified>2024-11-05T14:14:00</DateModified>
   <ModuleName>main</ModuleName>
   <SummaryTimeStamp>2024-11-03T14:44:08</SummaryTimeStamp>
-  <SavedFilePath>/home/ise/Share_with_VM_Digital/Project/Solar_tracking/iseconfig/main.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/ise/Share_with_VM_Digital/Project/Solar_tracking/</ImplementationReportsDirectory>
+  <SavedFilePath>/home/ise/Project/Solar_tracking/iseconfig/main.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/ise/Project/Solar_tracking/</ImplementationReportsDirectory>
   <DateInitialized>2024-11-03T08:31:08</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
