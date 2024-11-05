@@ -1,0 +1,127 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : main_motor.vf
+// /___/   /\     Timestamp : 11/05/2024 16:44:40
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog /home/ise/Share_with_VM_Digital/Project/Solar_tracking/main_motor.vf -w /home/ise/Share_with_VM_Digital/Project/Solar_tracking/main_motor.sch
+//Design Name: main_motor
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module main_motor(endXL, 
+                  endXR, 
+                  endYD, 
+                  endYU, 
+                  gx, 
+                  gy, 
+                  OSC_P123, 
+                  SW3_P59, 
+                  xDirIn, 
+                  yDirIn, 
+                  enSH, 
+                  enXMotor, 
+                  enYMotor, 
+                  isEnXMotor, 
+                  isEnYMotor, 
+                  L3_P79, 
+                  L4_P78, 
+                  L6_P74, 
+                  L7_P67, 
+                  MN3_P92, 
+                  MN4_P88, 
+                  xDirOut, 
+                  yDirOut);
+
+    input endXL;
+    input endXR;
+    input endYD;
+    input endYU;
+    input gx;
+    input gy;
+    input OSC_P123;
+    input SW3_P59;
+    input xDirIn;
+    input yDirIn;
+   output enSH;
+   output enXMotor;
+   output enYMotor;
+   output isEnXMotor;
+   output isEnYMotor;
+   output L3_P79;
+   output L4_P78;
+   output L6_P74;
+   output L7_P67;
+   output MN3_P92;
+   output MN4_P88;
+   output xDirOut;
+   output yDirOut;
+   
+   wire XLXN_50;
+   wire XLXN_51;
+   wire XLXN_52;
+   wire XLXN_53;
+   wire XLXN_74;
+   wire XLXN_75;
+   wire XLXN_80;
+   wire XLXN_81;
+   
+   MOTOR_DRIVER_MAIN  XLXI_2 (.clk(OSC_P123), 
+                             .endXL(endXL), 
+                             .endXR(endXR), 
+                             .endYD(endYD), 
+                             .endYU(endYU), 
+                             .gx(gx), 
+                             .gy(gy), 
+                             .xDir(xDirIn), 
+                             .yDir(yDirIn), 
+                             .enXMotor(enXMotor), 
+                             .enYMotor(enYMotor), 
+                             .isEnXMotor(isEnXMotor), 
+                             .isEnYMotor(isEnYMotor));
+   INV  XLXI_28 (.I(endYD), 
+                .O(XLXN_50));
+   INV  XLXI_29 (.I(endYU), 
+                .O(XLXN_51));
+   INV  XLXI_30 (.I(XLXN_50), 
+                .O(MN3_P92));
+   INV  XLXI_31 (.I(XLXN_51), 
+                .O(MN4_P88));
+   INV  XLXI_32 (.I(endXL), 
+                .O(XLXN_52));
+   INV  XLXI_33 (.I(XLXN_52), 
+                .O(L3_P79));
+   INV  XLXI_34 (.I(endXR), 
+                .O(XLXN_53));
+   INV  XLXI_35 (.I(XLXN_53), 
+                .O(L4_P78));
+   INV  XLXI_36 (.I(SW3_P59), 
+                .O(enSH));
+   INV  XLXI_52 (.I(yDirIn), 
+                .O(XLXN_74));
+   INV  XLXI_53 (.I(XLXN_74), 
+                .O(L6_P74));
+   INV  XLXI_54 (.I(xDirIn), 
+                .O(XLXN_75));
+   INV  XLXI_55 (.I(XLXN_75), 
+                .O(L7_P67));
+   INV  XLXI_56 (.I(yDirIn), 
+                .O(XLXN_80));
+   INV  XLXI_57 (.I(xDirIn), 
+                .O(XLXN_81));
+   INV  XLXI_58 (.I(XLXN_80), 
+                .O(yDirOut));
+   INV  XLXI_59 (.I(XLXN_81), 
+                .O(xDirOut));
+endmodule

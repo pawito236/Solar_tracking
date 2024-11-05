@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.00 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.00 secs
  
 --> 
 Reading design: main.prj
@@ -108,15 +108,15 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "/home/ise/Project/Solar_tracking/main.vf" into library work
+Analyzing Verilog file "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/main.vf" into library work
 Parsing module <main>.
-Parsing VHDL file "/home/ise/Project/Solar_tracking/MOTOR_DRIVER.vhd" into library work
+Parsing VHDL file "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/MOTOR_DRIVER.vhd" into library work
 Parsing entity <MOTOR_DRIVER>.
 Parsing architecture <Behavioral> of entity <motor_driver>.
-Parsing VHDL file "/home/ise/Project/Solar_tracking/DISPLAY_LIGHT.vhd" into library work
+Parsing VHDL file "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/DISPLAY_LIGHT.vhd" into library work
 Parsing entity <DISPLAY_LIGHT>.
 Parsing architecture <Behavioral> of entity <display_light>.
-Parsing VHDL file "/home/ise/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd" into library work
+Parsing VHDL file "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd" into library work
 Parsing entity <ANGLE_CALCULATOR_V2>.
 Parsing architecture <Behavioral> of entity <angle_calculator_v2>.
 
@@ -128,18 +128,18 @@ Elaborating module <main>.
 Going to vhdl side to elaborate module ANGLE_CALCULATOR_V2
 
 Elaborating entity <ANGLE_CALCULATOR_V2> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:92 - "/home/ise/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd" Line 67: lti should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd" Line 68: ldi should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd" Line 69: lti should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd" Line 70: rti should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd" Line 72: avt should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd" Line 73: avl should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd" Line 76: dy should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd" Line 77: avt should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd" Line 84: dy should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd" Line 90: dx should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd" Line 91: avl should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd" Line 99: dx should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd" Line 67: lti should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd" Line 68: ldi should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd" Line 69: lti should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd" Line 70: rti should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd" Line 72: avt should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd" Line 73: avl should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd" Line 76: dy should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd" Line 77: avt should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd" Line 84: dy should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd" Line 90: dx should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd" Line 91: avl should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd" Line 99: dx should be on the sensitivity list of the process
 Back to verilog to continue elaboration
 Going to vhdl side to elaborate module MOTOR_DRIVER
 
@@ -150,7 +150,7 @@ Elaborating module <INV>.
 Going to vhdl side to elaborate module DISPLAY_LIGHT
 
 Elaborating entity <DISPLAY_LIGHT> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "/home/ise/Project/Solar_tracking/DISPLAY_LIGHT.vhd" Line 105. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/DISPLAY_LIGHT.vhd" Line 105. Case statement is complete. others clause is never selected
 Back to verilog to continue elaboration
 
 Elaborating module <GND>.
@@ -160,14 +160,14 @@ Elaborating module <GND>.
 =========================================================================
 
 Synthesizing Unit <main>.
-    Related source file is "/home/ise/Project/Solar_tracking/main.vf".
-INFO:Xst:3210 - "/home/ise/Project/Solar_tracking/main.vf" line 109: Output port <st> of the instance <XLXI_5> is unconnected or connected to loadless signal.
+    Related source file is "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/main.vf".
+INFO:Xst:3210 - "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/main.vf" line 109: Output port <st> of the instance <XLXI_5> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <main> synthesized.
 
 Synthesizing Unit <ANGLE_CALCULATOR_V2>.
-    Related source file is "/home/ise/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd".
+    Related source file is "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd".
     Found 32-bit adder for signal <lti[31]_rti[31]_add_0_OUT> created at line 67.
     Found 31-bit adder for signal <lti[31]_GND_5_o_add_1_OUT> created at line 67.
     Found 32-bit adder for signal <n0279[31:0]> created at line 72.
@@ -200,7 +200,7 @@ WARNING:Xst:737 - Found 1-bit latch for signal <yDir>. Latches may be generated 
 Unit <ANGLE_CALCULATOR_V2> synthesized.
 
 Synthesizing Unit <MOTOR_DRIVER>.
-    Related source file is "/home/ise/Project/Solar_tracking/MOTOR_DRIVER.vhd".
+    Related source file is "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/MOTOR_DRIVER.vhd".
     Found 32-bit register for signal <counter>.
     Found 2-bit register for signal <state>.
     Found 1-bit register for signal <enX>.
@@ -231,7 +231,7 @@ Synthesizing Unit <MOTOR_DRIVER>.
 Unit <MOTOR_DRIVER> synthesized.
 
 Synthesizing Unit <DISPLAY_LIGHT>.
-    Related source file is "/home/ise/Project/Solar_tracking/DISPLAY_LIGHT.vhd".
+    Related source file is "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/DISPLAY_LIGHT.vhd".
     Found 4-bit register for signal <common>.
     Found 7-bit register for signal <seg>.
     Found 32-bit register for signal <counter>.
@@ -810,13 +810,13 @@ XLXI_4/dy[31]_GND_5_o_OR_1_o|         |    2.591|         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 1.60 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 1.39 secs
  
 --> 
 
 
-Total memory usage is 488468 kilobytes
+Total memory usage is 488760 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   51 (   0 filtered)

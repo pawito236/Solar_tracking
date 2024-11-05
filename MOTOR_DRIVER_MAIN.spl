@@ -1,0 +1,16 @@
+[Inputs]
+gx
+gy
+xDir
+yDir
+endYD
+endYU
+endXL
+endXR
+clk
+[Outputs]
+enXMotor
+enYMotor
+isEnXMotor
+isEnYMotor
+[BiDir]

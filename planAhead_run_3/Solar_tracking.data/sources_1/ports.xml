@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Port Id="endXL" Dir="IN"/>
+		<Port Id="endXR" Dir="IN"/>
+		<Port Id="endYD" Dir="IN"/>
+		<Port Id="endYU" Dir="IN"/>
+		<Port Id="gx" Dir="IN"/>
+		<Port Id="gy" Dir="IN"/>
+		<Port Id="OSC_P123" Dir="IN"/>
+		<Port Id="SW3_P59" Dir="IN"/>
+		<Port Id="xDirIn" Dir="IN"/>
+		<Port Id="yDirIn" Dir="IN"/>
+		<Port Id="enSH" Dir="OUT"/>
+		<Port Id="enXMotor" Dir="OUT"/>
+		<Port Id="enYMotor" Dir="OUT"/>
+		<Port Id="isEnXMotor" Dir="OUT"/>
+		<Port Id="isEnYMotor" Dir="OUT"/>
+		<Port Id="L3_P79" Dir="OUT"/>
+		<Port Id="L4_P78" Dir="OUT"/>
+		<Port Id="L6_P74" Dir="OUT"/>
+		<Port Id="L7_P67" Dir="OUT"/>
+		<Port Id="MN3_P92" Dir="OUT"/>
+		<Port Id="MN4_P88" Dir="OUT"/>
+		<Port Id="xDirOut" Dir="OUT"/>
+		<Port Id="yDirOut" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

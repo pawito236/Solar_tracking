@@ -1,0 +1,4 @@
+vhdtdtfi -lib work MOTOR_DRIVER_MAIN.vhd -prj Solar_tracking -o MOTOR_DRIVER_MAIN.spl -module MOTOR_DRIVER_MAIN -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w MOTOR_DRIVER_MAIN.spl /home/ise/Share_with_VM_Digital/Project/Solar_tracking/MOTOR_DRIVER_MAIN.sym 
+vhdtdtfi -lib work MOTOR_DRIVER_MAIN.vhd -prj Solar_tracking -o MOTOR_DRIVER_MAIN.spl -module MOTOR_DRIVER_MAIN -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w MOTOR_DRIVER_MAIN.spl /home/ise/Share_with_VM_Digital/Project/Solar_tracking/MOTOR_DRIVER_MAIN.sym 

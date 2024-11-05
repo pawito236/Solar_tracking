@@ -1,0 +1,2 @@
+vhdl work "MOTOR_DRIVER_MAIN.vhd"
+verilog work "main_motor.vf"
