@@ -1,0 +1,2 @@
+vhdtdtfi -lib work MOTOR_DRIVER.vhd -prj Solar_tracking -o MOTOR_DRIVER.spl -module MOTOR_DRIVER -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w MOTOR_DRIVER.spl /home/ise/Project/Solar_tracking/MOTOR_DRIVER.sym 

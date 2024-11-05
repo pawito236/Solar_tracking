@@ -1,0 +1,60 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Sun Nov  3 08:41:06 2024
+# Process ID: 2688
+# Log file: /home/ise/Project/Solar_tracking/planAhead_run_1/planAhead.log
+# Journal file: /home/ise/Project/Solar_tracking/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/ise/Project/Solar_tracking/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P5 [get_ports {SENSORXL[2]}]
+endgroup
+startgroup
+set_property package_pin P7 [get_ports {SENSORXL[1]}]
+endgroup
+startgroup
+set_property package_pin P9 [get_ports {SENSORXL[0]}]
+endgroup
+startgroup
+set_property package_pin P11 [get_ports {SENSORXR[2]}]
+endgroup
+startgroup
+set_property package_pin P14 [get_ports {SENSORXR[1]}]
+endgroup
+startgroup
+set_property package_pin P16 [get_ports {SENSORXR[0]}]
+endgroup
+startgroup
+set_property package_pin P6 [get_ports {SENSORYL[2]}]
+endgroup
+startgroup
+set_property package_pin P8 [get_ports {SENSORYL[1]}]
+endgroup
+startgroup
+set_property package_pin P10 [get_ports {SENSORYL[0]}]
+endgroup
+startgroup
+set_property package_pin P12 [get_ports {SENSORYR[2]}]
+endgroup
+startgroup
+set_property package_pin P15 [get_ports {SENSORYR[1]}]
+endgroup
+startgroup
+set_property package_pin P17 [get_ports {SENSORYR[0]}]
+endgroup
+startgroup
+set_property package_pin P82 [get_ports L0_P82]
+endgroup
+startgroup
+set_property package_pin P81 [get_ports L1_P81]
+endgroup
+startgroup
+set_property package_pin P80 [get_ports L2_P80]
+endgroup
+startgroup
+set_property package_pin P79 [get_ports L3_P79]
+endgroup
+save_constraints

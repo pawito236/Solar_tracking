@@ -1,0 +1,4 @@
+vhdl work "MOTOR_DRIVER.vhd"
+vhdl work "DISPLAY_LIGHT.vhd"
+vhdl work "ANGLE_CALCULATOR_V2.vhd"
+verilog work "main.vf"

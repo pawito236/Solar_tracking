@@ -1,0 +1,11 @@
+[Inputs]
+clk
+reset
+=A[2:0]=
+=B[2:0]=
+=C[2:0]=
+=D[2:0]=
+[Outputs]
+=seg[6:0]=
+=common[3:0]=
+[BiDir]

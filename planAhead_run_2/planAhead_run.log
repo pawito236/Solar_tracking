@@ -1,0 +1,83 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -2745 day(s)
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source /home/ise/Project/Solar_tracking/pa.fromHdl.tcl
+# create_project -name Solar_tracking -dir "/home/ise/Project/Solar_tracking/planAhead_run_2" -part xc6slx9tqg144-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "main.ucf" [current_fileset -constrset]
+Adding file '/home/ise/Project/Solar_tracking/main.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {MOTOR_DRIVER.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {INPUT_PROCESSOR.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ANGLE_CALCULATOR_V2.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {main.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top main $srcset
+# add_files [list {main.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-3
+Using Verific elaboration
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "/home/ise/Project/Solar_tracking/MOTOR_DRIVER.vhd" into library work
+Parsing VHDL file "/home/ise/Project/Solar_tracking/INPUT_PROCESSOR.vhd" into library work
+Parsing VHDL file "/home/ise/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd" into library work
+Loading clock regions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [/home/ise/Project/Solar_tracking/main.ucf]
+Finished Parsing UCF File [/home/ise/Project/Solar_tracking/main.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: bbf611a8
+open_rtl_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 2794.586 ; gain = 150.266
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P123 [get_ports OSC_P123]
+endgroup
+startgroup
+set_property package_pin P84 [get_ports endXMotor]
+endgroup
+startgroup
+set_property package_pin P85 [get_ports endYMotor]
+endgroup
+startgroup
+set_property package_pin P46 [get_ports endXR]
+endgroup
+startgroup
+set_property package_pin P45 [get_ports endXR]
+endgroup
+startgroup
+set_property package_pin P46 [get_ports endXL]
+endgroup
+startgroup
+set_property package_pin P48 [get_ports endYD]
+endgroup
+startgroup
+set_property package_pin P47 [get_ports endYU]
+endgroup
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Mon Nov  4 12:40:56 2024...
+INFO: [Common 17-83] Releasing license: PlanAhead

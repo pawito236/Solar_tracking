@@ -1,0 +1,11 @@
+[Inputs]
+=rts[2:0]=
+=rds[2:0]=
+=lds[2:0]=
+=lts[2:0]=
+[Outputs]
+xDir
+yDir
+=gx[2:0]=
+=gy[2:0]=
+[BiDir]

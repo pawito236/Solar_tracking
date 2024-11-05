@@ -1,0 +1,164 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : main.vf
+// /___/   /\     Timestamp : 11/05/2024 12:35:48
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog /home/ise/Project/Solar_tracking/main.vf -w /home/ise/Project/Solar_tracking/main.sch
+//Design Name: main
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module main(endXL, 
+            endXR, 
+            endYD, 
+            endYU, 
+            LD, 
+            LT, 
+            OSC_P123, 
+            RD, 
+            RT, 
+            SW3_P59, 
+            COMMON, 
+            endXMotor, 
+            endYMotor, 
+            enSH, 
+            GX, 
+            GY, 
+            L3_P79, 
+            L4_P78, 
+            L6_P74, 
+            L7_P67, 
+            MN3_P92, 
+            MN4_P88, 
+            MN6_P85, 
+            MN7_P84, 
+            SEG, 
+            xDir, 
+            yDir);
+
+    input endXL;
+    input endXR;
+    input endYD;
+    input endYU;
+    input [2:0] LD;
+    input [2:0] LT;
+    input OSC_P123;
+    input [2:0] RD;
+    input [2:0] RT;
+    input SW3_P59;
+   output [3:0] COMMON;
+   output endXMotor;
+   output endYMotor;
+   output enSH;
+   output [2:0] GX;
+   output [2:0] GY;
+   output L3_P79;
+   output L4_P78;
+   output L6_P74;
+   output L7_P67;
+   output MN3_P92;
+   output MN4_P88;
+   output MN6_P85;
+   output MN7_P84;
+   output [6:0] SEG;
+   output xDir;
+   output yDir;
+   
+   wire XLXN_35;
+   wire XLXN_36;
+   wire XLXN_37;
+   wire XLXN_38;
+   wire XLXN_50;
+   wire XLXN_51;
+   wire XLXN_52;
+   wire XLXN_53;
+   wire XLXN_57;
+   wire L6_P74_DUMMY;
+   wire L7_P67_DUMMY;
+   wire endXMotor_DUMMY;
+   wire endYMotor_DUMMY;
+   wire [2:0] GX_DUMMY;
+   wire [2:0] GY_DUMMY;
+   
+   assign endXMotor = endXMotor_DUMMY;
+   assign endYMotor = endYMotor_DUMMY;
+   assign GX[2:0] = GX_DUMMY[2:0];
+   assign GY[2:0] = GY_DUMMY[2:0];
+   assign L6_P74 = L6_P74_DUMMY;
+   assign L7_P67 = L7_P67_DUMMY;
+   ANGLE_CALCULATOR_V2  XLXI_4 (.lds(LD[2:0]), 
+                               .lts(LT[2:0]), 
+                               .rds(RD[2:0]), 
+                               .rts(RT[2:0]), 
+                               .gx(GX_DUMMY[2:0]), 
+                               .gy(GY_DUMMY[2:0]), 
+                               .xDir(L7_P67_DUMMY), 
+                               .yDir(L6_P74_DUMMY));
+   MOTOR_DRIVER  XLXI_5 (.clk(OSC_P123), 
+                        .endXL(endXL), 
+                        .endXR(endXR), 
+                        .endYD(endYD), 
+                        .endYU(endYU), 
+                        .gx(GX_DUMMY[2:0]), 
+                        .gy(GY_DUMMY[2:0]), 
+                        .xDir(L7_P67_DUMMY), 
+                        .yDir(L6_P74_DUMMY), 
+                        .enXMotor(endXMotor_DUMMY), 
+                        .enYMotor(endYMotor_DUMMY), 
+                        .st());
+   INV  XLXI_16 (.I(L6_P74_DUMMY), 
+                .O(XLXN_35));
+   INV  XLXI_17 (.I(XLXN_35), 
+                .O(yDir));
+   INV  XLXI_18 (.I(L7_P67_DUMMY), 
+                .O(XLXN_36));
+   INV  XLXI_19 (.I(XLXN_36), 
+                .O(xDir));
+   INV  XLXI_20 (.I(endXMotor_DUMMY), 
+                .O(XLXN_37));
+   INV  XLXI_21 (.I(XLXN_37), 
+                .O(MN7_P84));
+   INV  XLXI_22 (.I(endYMotor_DUMMY), 
+                .O(XLXN_38));
+   INV  XLXI_23 (.I(XLXN_38), 
+                .O(MN6_P85));
+   INV  XLXI_28 (.I(endYD), 
+                .O(XLXN_50));
+   INV  XLXI_29 (.I(endYU), 
+                .O(XLXN_51));
+   INV  XLXI_30 (.I(XLXN_50), 
+                .O(MN3_P92));
+   INV  XLXI_31 (.I(XLXN_51), 
+                .O(MN4_P88));
+   INV  XLXI_32 (.I(endXL), 
+                .O(XLXN_52));
+   INV  XLXI_33 (.I(XLXN_52), 
+                .O(L3_P79));
+   INV  XLXI_34 (.I(endXR), 
+                .O(XLXN_53));
+   INV  XLXI_35 (.I(XLXN_53), 
+                .O(L4_P78));
+   INV  XLXI_36 (.I(SW3_P59), 
+                .O(enSH));
+   DISPLAY_LIGHT  XLXI_37 (.A(LD[2:0]), 
+                          .B(LT[2:0]), 
+                          .C(RD[2:0]), 
+                          .clk(OSC_P123), 
+                          .D(RT[2:0]), 
+                          .reset(XLXN_57), 
+                          .common(COMMON[3:0]), 
+                          .seg(SEG[6:0]));
+   GND  XLXI_38 (.G(XLXN_57));
+endmodule

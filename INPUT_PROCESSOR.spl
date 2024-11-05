@@ -1,0 +1,11 @@
+[Inputs]
+=SENSORXR[2:0]=
+=SENSORYR[2:0]=
+=SENSORXL[2:0]=
+=SENSORYL[2:0]=
+[Outputs]
+LEDXR
+LEDYR
+LEDXL
+LEDYL
+[BiDir]

@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Mon Nov  4 12:31:14 2024
+# Process ID: 2859
+# Log file: /home/ise/Project/Solar_tracking/planAhead_run_2/planAhead.log
+# Journal file: /home/ise/Project/Solar_tracking/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/ise/Project/Solar_tracking/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P123 [get_ports OSC_P123]
+endgroup
+startgroup
+set_property package_pin P84 [get_ports endXMotor]
+endgroup
+startgroup
+set_property package_pin P85 [get_ports endYMotor]
+endgroup
+startgroup
+set_property package_pin P46 [get_ports endXR]
+endgroup
+startgroup
+set_property package_pin P45 [get_ports endXR]
+endgroup
+startgroup
+set_property package_pin P46 [get_ports endXL]
+endgroup
+startgroup
+set_property package_pin P48 [get_ports endYD]
+endgroup
+startgroup
+set_property package_pin P47 [get_ports endYU]
+endgroup
+save_constraints

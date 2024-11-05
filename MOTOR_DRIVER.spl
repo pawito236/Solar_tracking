@@ -1,0 +1,15 @@
+[Inputs]
+xDir
+yDir
+endYD
+endYU
+endXL
+endXR
+clk
+=gx[2:0]=
+=gy[2:0]=
+[Outputs]
+enXMotor
+enYMotor
+=st[1:0]=
+[BiDir]
