@@ -1,0 +1,3 @@
+vhdl work "DISPLAY_LIGHT.vhd"
+vhdl work "ANGLE_CALCULATOR_MAIN.vhd"
+verilog work "main_input_processor.vf"

@@ -51,7 +51,7 @@ architecture Behavioral of DISPLAY_LIGHT is
     constant REFRESH_RATE : integer := 20000;  -- Adjust this for display speed
 
     -- Segment lookup for 0-9 (assuming common cathode configuration)
-    type seg_lut_type is array (0 to 9) of std_logic_vector(6 downto 0);
+    type seg_lut_type is array (0 to 15) of std_logic_vector(6 downto 0);
 	 constant seg_lut : seg_lut_type := (
 		 "0111111", -- 0
 		 "0000110", -- 1
@@ -62,7 +62,13 @@ architecture Behavioral of DISPLAY_LIGHT is
 		 "1111101", -- 6
 		 "0000111", -- 7
 		 "1111111", -- 8
-		 "1101111"  -- 9
+		 "1101111",  -- 9
+		 "1110111", -- A
+		 "1111100", -- B
+		 "0111001", -- C
+		 "1011110", -- D
+		 "1111001", -- E
+		 "1110001"  -- F
 	);
 
 begin

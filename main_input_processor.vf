@@ -1,0 +1,72 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : main_input_processor.vf
+// /___/   /\     Timestamp : 11/05/2024 17:28:56
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog /home/ise/Share_with_VM_Digital/Project/Solar_tracking/main_input_processor.vf -w /home/ise/Share_with_VM_Digital/Project/Solar_tracking/main_input_processor.sch
+//Design Name: main_input_processor
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module main_input_processor(LD, 
+                            LT, 
+                            OSC_P123, 
+                            RD, 
+                            RT, 
+                            COMMON, 
+                            GX, 
+                            GY, 
+                            isdx, 
+                            isdy, 
+                            SEG, 
+                            xDir, 
+                            yDir);
+
+    input [2:0] LD;
+    input [2:0] LT;
+    input OSC_P123;
+    input [2:0] RD;
+    input [2:0] RT;
+   output [3:0] COMMON;
+   output [2:0] GX;
+   output [2:0] GY;
+   output isdx;
+   output isdy;
+   output [6:0] SEG;
+   output xDir;
+   output yDir;
+   
+   wire XLXN_19;
+   
+   ANGLE_CALCULATOR_MAIN  XLXI_1 (.lds(LD[2:0]), 
+                                 .lts(LT[2:0]), 
+                                 .rds(RD[2:0]), 
+                                 .rts(RT[2:0]), 
+                                 .gx(GX[2:0]), 
+                                 .gy(GY[2:0]), 
+                                 .isdx(isdx), 
+                                 .isdy(isdy), 
+                                 .xDir(xDir), 
+                                 .yDir(yDir));
+   DISPLAY_LIGHT  XLXI_2 (.A(LT[2:0]), 
+                         .B(LD[2:0]), 
+                         .C(RD[2:0]), 
+                         .clk(OSC_P123), 
+                         .D(RT[2:0]), 
+                         .reset(XLXN_19), 
+                         .common(COMMON[3:0]), 
+                         .seg(SEG[6:0]));
+   GND  XLXI_3 (.G(XLXN_19));
+endmodule

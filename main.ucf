@@ -33,18 +33,18 @@ NET "RD[0]" LOC = P17;
 #NET "L0_P82" LOC = P82;
 #NET "L1_P81" LOC = P81;
 #NET "L2_P80" LOC = P80;
-NET "L3_P79" LOC = P79;
-NET "L4_P78" LOC = P78;
+#NET "L3_P79" LOC = P79;
+#NET "L4_P78" LOC = P78;
 #NET "L5_P75" LOC = P75;
 
-NET "L7_P67" LOC = P67;
-NET "L6_P74" LOC = P74;
+#NET "L7_P67" LOC = P67;
+#NET "L6_P74" LOC = P74;
 
 
-NET "MN3_P92" LOC = P92;
-NET "MN4_P88" LOC = P88;
-NET "MN6_P85" LOC = P85;
-NET "MN7_P84" LOC = P84;
+#NET "MN3_P92" LOC = P92;
+#NET "MN4_P88" LOC = P88;
+#NET "MN6_P85" LOC = P85;
+#NET "MN7_P84" LOC = P84;
 
 
 //MSB
@@ -79,13 +79,16 @@ NET "GY[0]" LOC = P95;
 # PlanAhead Generated physical constraints 
 
 NET "OSC_P123" LOC = P123;
-NET "endXMotor" LOC = P131;
-NET "endYMotor" LOC = P137;
+#NET "endXMotor" LOC = P131;
+#NET "endYMotor" LOC = P137;
 
 NET "xDir" LOC = P126;
-NET "yDir" LOC = P133;
-NET "enSH" LOC = P139;
-NET "SW3_P59" LOC = P59;
+NET "yDir" LOC = P131;
+NET "isdx" LOC = P133;
+NET "isdy" LOC = P137;
+
+#NET "enSH" LOC = P139;
+#NET "SW3_P59" LOC = P59;
 
 
 # --- SW and DIP Test for end sw ---
@@ -96,7 +99,7 @@ NET "SW3_P59" LOC = P59;
 
 # ---
 
-NET "endXR" LOC = P124;
-NET "endXL" LOC = P127;
-NET "endYD" LOC = P134;
-NET "endYU" LOC = P132;
+#NET "endXR" LOC = P124;
+#NET "endXL" LOC = P127;
+#NET "endYD" LOC = P134;
+#NET "endYU" LOC = P132;

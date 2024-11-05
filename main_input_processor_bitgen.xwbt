@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/Share_with_VM_Digital/Project/Solar_tracking/main_input_processor.ncd
+OUTFILE=/home/ise/Share_with_VM_Digital/Project/Solar_tracking/main_input_processor.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=/home/ise/Share_with_VM_Digital/Project/Solar_tracking
+LICENSE=ISE
+USER_INFO=8416_11442_1478797146_620
