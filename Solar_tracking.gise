@@ -110,6 +110,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="main_motor.vf"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="main_motor.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="main_motor.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="main_motor_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="main_motor_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="main_motor_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="main_motor_map.mrp" xil_pn:subbranch="Map"/>
@@ -168,12 +169,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1730825096" xil_pn:in_ck="-7730059050532521587" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-7890447987590253214" xil_pn:start_ts="1730825082">
+    <transform xil_pn:end_ts="1730900766" xil_pn:in_ck="-7730059050532521587" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-7890447987590253214" xil_pn:start_ts="1730900741">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="main_motor.jhd"/>
       <outfile xil_pn:name="main_motor.lso"/>
@@ -194,6 +193,8 @@
     <transform xil_pn:end_ts="1730825586" xil_pn:in_ck="8064267787825137207" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-2499032286403024805" xil_pn:start_ts="1730825579">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="main_motor.bld"/>
@@ -203,6 +204,7 @@
     <transform xil_pn:end_ts="1730825611" xil_pn:in_ck="835908114860926201" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="6093601622908603872" xil_pn:start_ts="1730825586">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="main_motor.pcf"/>
       <outfile xil_pn:name="main_motor_map.map"/>
@@ -216,6 +218,7 @@
     <transform xil_pn:end_ts="1730825648" xil_pn:in_ck="-7448124408105619605" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-6780099238861732004" xil_pn:start_ts="1730825611">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="main_motor.ncd"/>
       <outfile xil_pn:name="main_motor.pad"/>
@@ -230,6 +233,9 @@
     <transform xil_pn:end_ts="1730825672" xil_pn:in_ck="4688850636914961536" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1730825648">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="main_motor.bgn"/>
       <outfile xil_pn:name="main_motor.bit"/>
@@ -241,6 +247,7 @@
     <transform xil_pn:end_ts="1730825648" xil_pn:in_ck="-4251306886759905039" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1730825633">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="main_motor.twr"/>
       <outfile xil_pn:name="main_motor.twx"/>
