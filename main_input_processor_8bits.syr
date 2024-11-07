@@ -4,14 +4,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.00 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.00 secs
  
 --> 
@@ -129,8 +129,6 @@ INFO:HDLCompiler:679 - "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/D
 Back to verilog to continue elaboration
 
 Elaborating module <GND>.
-
-Elaborating module <INV>.
 Going to vhdl side to elaborate module ANGLE_CALCULATOR_8bits
 
 Elaborating entity <ANGLE_CALCULATOR_8bits> (architecture <Behavioral>) from library <work>.
@@ -143,6 +141,9 @@ Back to verilog to continue elaboration
 
 Synthesizing Unit <main_input_processor_8bits>.
     Related source file is "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/main_input_processor_8bits.vf".
+INFO:Xst:3210 - "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/main_input_processor_8bits.vf" line 70: Output port <st> of the instance <XLXI_9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/main_input_processor_8bits.vf" line 70: Output port <address> of the instance <XLXI_9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/main_input_processor_8bits.vf" line 70: Output port <data> of the instance <XLXI_9> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <main_input_processor_8bits> synthesized.
@@ -229,20 +230,20 @@ WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and lef
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Found 32-bit adder for signal <lti[31]_rti[31]_add_16_OUT> created at line 121.
-    Found 31-bit adder for signal <lti[31]_GND_9_o_add_17_OUT> created at line 121.
+    Found 31-bit adder for signal <lti[31]_GND_8_o_add_17_OUT> created at line 121.
     Found 32-bit adder for signal <ldi[31]_rdi[31]_add_18_OUT> created at line 122.
-    Found 31-bit adder for signal <ldi[31]_GND_9_o_add_19_OUT> created at line 122.
+    Found 31-bit adder for signal <ldi[31]_GND_8_o_add_19_OUT> created at line 122.
     Found 32-bit adder for signal <lti[31]_ldi[31]_add_20_OUT> created at line 123.
-    Found 31-bit adder for signal <lti[31]_GND_9_o_add_21_OUT> created at line 123.
+    Found 31-bit adder for signal <lti[31]_GND_8_o_add_21_OUT> created at line 123.
     Found 32-bit adder for signal <rti[31]_rdi[31]_add_22_OUT> created at line 124.
-    Found 31-bit adder for signal <rti[31]_GND_9_o_add_23_OUT> created at line 124.
+    Found 31-bit adder for signal <rti[31]_GND_8_o_add_23_OUT> created at line 124.
     Found 32-bit adder for signal <n0205[31:0]> created at line 131.
     Found 32-bit adder for signal <n0207[31:0]> created at line 145.
     Found 32-bit subtractor for signal <avt[31]_avd[31]_sub_25_OUT<31:0>> created at line 127.
     Found 32-bit subtractor for signal <avl[31]_avr[31]_sub_26_OUT<31:0>> created at line 128.
-    Found 32-bit comparator greater for signal <GND_9_o_GND_9_o_LessThan_28_o> created at line 131
+    Found 32-bit comparator greater for signal <GND_8_o_GND_8_o_LessThan_28_o> created at line 131
     Found 32-bit comparator greater for signal <avt[31]_avd[31]_LessThan_29_o> created at line 132
-    Found 32-bit comparator greater for signal <GND_9_o_GND_9_o_LessThan_33_o> created at line 145
+    Found 32-bit comparator greater for signal <GND_8_o_GND_8_o_LessThan_33_o> created at line 145
     Found 32-bit comparator lessequal for signal <avl[31]_avr[31]_LessThan_34_o> created at line 146
     Summary:
 	inferred  12 Adder/Subtractor(s).
@@ -300,9 +301,9 @@ WARNING:Xst:1426 - The value init of the FF/Latch rti_31 hinder the constant cle
 WARNING:Xst:1426 - The value init of the FF/Latch rdi_31 hinder the constant cleaning in the block XLXI_9.
    You should achieve better results by setting this init to 0.
 WARNING:Xst:1293 - FF/Latch <rti_8> has a constant value of 0 in block <XLXI_9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ldi_8> has a constant value of 0 in block <XLXI_9>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <rdi_8> has a constant value of 0 in block <XLXI_9>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <lti_8> has a constant value of 0 in block <XLXI_9>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <ldi_8> has a constant value of 0 in block <XLXI_9>. This FF/Latch will be trimmed during the optimization process.
 
 Synthesizing (advanced) Unit <DISPLAY_LIGHT_8bits>.
 The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
@@ -593,6 +594,18 @@ Optimizing unit <main_input_processor_8bits> ...
 Optimizing unit <ANGLE_CALCULATOR_8bits> ...
 
 Optimizing unit <DISPLAY_LIGHT_8bits> ...
+WARNING:Xst:2677 - Node <XLXI_9/st_1> of sequential type is unconnected in block <main_input_processor_8bits>.
+WARNING:Xst:2677 - Node <XLXI_9/st_0> of sequential type is unconnected in block <main_input_processor_8bits>.
+WARNING:Xst:2677 - Node <XLXI_9/data_7> of sequential type is unconnected in block <main_input_processor_8bits>.
+WARNING:Xst:2677 - Node <XLXI_9/data_6> of sequential type is unconnected in block <main_input_processor_8bits>.
+WARNING:Xst:2677 - Node <XLXI_9/data_5> of sequential type is unconnected in block <main_input_processor_8bits>.
+WARNING:Xst:2677 - Node <XLXI_9/data_4> of sequential type is unconnected in block <main_input_processor_8bits>.
+WARNING:Xst:2677 - Node <XLXI_9/data_3> of sequential type is unconnected in block <main_input_processor_8bits>.
+WARNING:Xst:2677 - Node <XLXI_9/data_2> of sequential type is unconnected in block <main_input_processor_8bits>.
+WARNING:Xst:2677 - Node <XLXI_9/data_1> of sequential type is unconnected in block <main_input_processor_8bits>.
+WARNING:Xst:2677 - Node <XLXI_9/data_0> of sequential type is unconnected in block <main_input_processor_8bits>.
+WARNING:Xst:2677 - Node <XLXI_9/address_1> of sequential type is unconnected in block <main_input_processor_8bits>.
+WARNING:Xst:2677 - Node <XLXI_9/address_0> of sequential type is unconnected in block <main_input_processor_8bits>.
 WARNING:Xst:1293 - FF/Latch <XLXI_3/counter_15> has a constant value of 0 in block <main_input_processor_8bits>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_3/counter_16> has a constant value of 0 in block <main_input_processor_8bits>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_3/counter_17> has a constant value of 0 in block <main_input_processor_8bits>. This FF/Latch will be trimmed during the optimization process.
@@ -619,7 +632,7 @@ INFO:Xst:2261 - The FF/Latch <XLXI_9/dy_29> in Unit <main_input_processor_8bits>
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block main_input_processor_8bits, actual ratio is 9.
+Found area constraint ratio of 100 (+ 5) on block main_input_processor_8bits, actual ratio is 8.
 INFO:Xst:2261 - The FF/Latch <XLXI_9/lti_7> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_9/lts_7> 
 INFO:Xst:2261 - The FF/Latch <XLXI_9/lti_2> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_9/lts_2> 
 INFO:Xst:2261 - The FF/Latch <XLXI_9/rdi_6> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_9/rds_6> 
@@ -663,8 +676,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 183
- Flip-Flops                                            : 183
+# Registers                                            : 171
+ Flip-Flops                                            : 171
 
 =========================================================================
 
@@ -687,9 +700,9 @@ Top Level Output File Name         : main_input_processor_8bits.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 668
+# BELS                             : 665
 #      GND                         : 1
-#      INV                         : 4
+#      INV                         : 1
 #      LUT1                        : 4
 #      LUT2                        : 145
 #      LUT3                        : 33
@@ -700,15 +713,14 @@ Primitive and Black Box Usage:
 #      MUXF7                       : 4
 #      VCC                         : 1
 #      XORCY                       : 135
-# FlipFlops/Latches                : 183
-#      FD                          : 32
-#      FDE                         : 151
+# FlipFlops/Latches                : 171
+#      FD                          : 22
+#      FDE                         : 149
 # Clock Buffers                    : 2
-#      BUFG                        : 1
-#      BUFGP                       : 1
-# IO Buffers                       : 56
-#      IBUF                        : 12
-#      OBUF                        : 44
+#      BUFGP                       : 2
+# IO Buffers                       : 42
+#      IBUF                        : 11
+#      OBUF                        : 31
 
 Device utilization summary:
 ---------------------------
@@ -717,21 +729,20 @@ Selected Device : 6slx9tqg144-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             173  out of  11440     1%  
- Number of Slice LUTs:                  298  out of   5720     5%  
-    Number used as Logic:               298  out of   5720     5%  
+ Number of Slice Registers:             171  out of  11440     1%  
+ Number of Slice LUTs:                  295  out of   5720     5%  
+    Number used as Logic:               295  out of   5720     5%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    350
-   Number with an unused Flip Flop:     177  out of    350    50%  
-   Number with an unused LUT:            52  out of    350    14%  
-   Number of fully used LUT-FF pairs:   121  out of    350    34%  
-   Number of unique control sets:         9
+ Number of LUT Flip Flop pairs used:    346
+   Number with an unused Flip Flop:     175  out of    346    50%  
+   Number with an unused LUT:            51  out of    346    14%  
+   Number of fully used LUT-FF pairs:   120  out of    346    34%  
+   Number of unique control sets:         8
 
 IO Utilization: 
- Number of IOs:                          57
- Number of bonded IOBs:                  57  out of    102    55%  
-    IOB Flip Flops/Latches:              10
+ Number of IOs:                          44
+ Number of bonded IOBs:                  44  out of    102    43%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
@@ -757,7 +768,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-wr                                 | IBUF+BUFG              | 139   |
+wr                                 | BUFGP                  | 127   |
 OSC_P123                           | BUFGP                  | 44    |
 -----------------------------------+------------------------+-------+
 
@@ -770,9 +781,9 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: 4.864ns (Maximum Frequency: 205.596MHz)
-   Minimum input arrival time before clock: 3.722ns
+   Minimum input arrival time before clock: 3.693ns
    Maximum output required time after clock: 3.668ns
-   Maximum combinational path delay: 6.666ns
+   Maximum combinational path delay: No path found
 
 Timing Details:
 ---------------
@@ -781,7 +792,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'wr'
   Clock period: 4.864ns (frequency: 205.596MHz)
-  Total number of paths / destination ports: 7195 / 217
+  Total number of paths / destination ports: 7191 / 213
 -------------------------------------------------------------------------
 Delay:               4.864ns (Levels of Logic = 7)
   Source:            XLXI_9/dx_31_1 (FF)
@@ -837,9 +848,9 @@ Delay:               4.731ns (Levels of Logic = 8)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'wr'
-  Total number of paths / destination ports: 120 / 81
+  Total number of paths / destination ports: 110 / 71
 -------------------------------------------------------------------------
-Offset:              3.722ns (Levels of Logic = 2)
+Offset:              3.693ns (Levels of Logic = 2)
   Source:            address_bus<0> (PAD)
   Destination:       XLXI_9/ldi_31 (FF)
   Destination Clock: wr rising
@@ -848,12 +859,12 @@ Offset:              3.722ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             8   1.222   1.147  address_bus_0_IBUF (address_bus_0_IBUF)
-     LUT5:I0->O            9   0.203   0.829  XLXI_9/_n0456_inv2 (XLXI_9/_n0456_inv)
-     FDE:CE                    0.322          XLXI_9/ldi_0
+     IBUF:I->O             7   1.222   1.118  address_bus_0_IBUF (address_bus_0_IBUF)
+     LUT5:I0->O            9   0.203   0.829  XLXI_9/_n0408_inv11 (XLXI_9/_n0408_inv1)
+     FDE:CE                    0.322          XLXI_9/rti_0
     ----------------------------------------
-    Total                      3.722ns (1.747ns logic, 1.975ns route)
-                                       (46.9% logic, 53.1% route)
+    Total                      3.693ns (1.747ns logic, 1.946ns route)
+                                       (47.3% logic, 52.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'OSC_P123'
@@ -876,25 +887,6 @@ Offset:              2.762ns (Levels of Logic = 2)
                                        (55.4% logic, 44.6% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'wr'
-  Total number of paths / destination ports: 32 / 32
--------------------------------------------------------------------------
-Offset:              3.668ns (Levels of Logic = 1)
-  Source:            XLXI_9/xDir (FF)
-  Destination:       xDir (PAD)
-  Source Clock:      wr rising
-
-  Data Path: XLXI_9/xDir to xDir
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               3   0.447   0.650  XLXI_9/xDir (XLXI_9/xDir)
-     OBUF:I->O                 2.571          xDir_OBUF (xDir)
-    ----------------------------------------
-    Total                      3.668ns (3.018ns logic, 0.650ns route)
-                                       (82.3% logic, 17.7% route)
-
-=========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'OSC_P123'
   Total number of paths / destination ports: 11 / 11
 -------------------------------------------------------------------------
@@ -914,24 +906,23 @@ Offset:              3.597ns (Levels of Logic = 1)
                                        (83.9% logic, 16.1% route)
 
 =========================================================================
-Timing constraint: Default path analysis
-  Total number of paths / destination ports: 1 / 1
+Timing constraint: Default OFFSET OUT AFTER for Clock 'wr'
+  Total number of paths / destination ports: 20 / 20
 -------------------------------------------------------------------------
-Delay:               6.666ns (Levels of Logic = 4)
-  Source:            wr (PAD)
-  Destination:       wr_sig (PAD)
+Offset:              3.668ns (Levels of Logic = 1)
+  Source:            XLXI_9/xDir (FF)
+  Destination:       xDir (PAD)
+  Source Clock:      wr rising
 
-  Data Path: wr to wr_sig
+  Data Path: XLXI_9/xDir to xDir
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.579  wr_IBUF (wr_IBUF)
-     INV:I->O              1   0.568   0.579  XLXI_7 (XLXN_21)
-     INV:I->O              1   0.568   0.579  XLXI_8 (wr_sig_OBUF)
-     OBUF:I->O                 2.571          wr_sig_OBUF (wr_sig)
+     FD:C->Q               3   0.447   0.650  XLXI_9/xDir (XLXI_9/xDir)
+     OBUF:I->O                 2.571          xDir_OBUF (xDir)
     ----------------------------------------
-    Total                      6.666ns (4.929ns logic, 1.737ns route)
-                                       (73.9% logic, 26.1% route)
+    Total                      3.668ns (3.018ns logic, 0.650ns route)
+                                       (82.3% logic, 17.7% route)
 
 =========================================================================
 
@@ -958,8 +949,8 @@ wr             |    4.864|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 23.00 secs
-Total CPU time to Xst completion: 0.56 secs
+Total REAL time to Xst completion: 25.00 secs
+Total CPU time to Xst completion: 0.54 secs
  
 --> 
 
@@ -967,6 +958,6 @@ Total CPU time to Xst completion: 0.56 secs
 Total memory usage is 488216 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  211 (   0 filtered)
-Number of infos    :   42 (   0 filtered)
+Number of warnings :  223 (   0 filtered)
+Number of infos    :   45 (   0 filtered)
 

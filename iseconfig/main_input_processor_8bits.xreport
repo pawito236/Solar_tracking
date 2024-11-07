@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2024-11-07T08:27:30</DateModified>
+  <DateModified>2024-11-07T08:57:58</DateModified>
   <ModuleName>main_input_processor_8bits</ModuleName>
-  <SummaryTimeStamp>2024-11-07T07:23:19</SummaryTimeStamp>
-  <SavedFilePath>/home/ise/Share_with_VM_Digital/Project/Solar_tracking/iseconfig/main_input_processor.xreport</SavedFilePath>
+  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SavedFilePath>/home/ise/Share_with_VM_Digital/Project/Solar_tracking/iseconfig/main_input_processor_8bits.xreport</SavedFilePath>
   <ImplementationReportsDirectory>/home/ise/Share_with_VM_Digital/Project/Solar_tracking</ImplementationReportsDirectory>
-  <DateInitialized>2024-11-07T05:48:28</DateInitialized>
+  <DateInitialized>2024-11-07T08:57:55</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>
