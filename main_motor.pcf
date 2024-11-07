@@ -1,10 +1,10 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Nov 07 10:07:07 2024
+// Written by: Map P.20131013 on Thu Nov 07 16:49:47 2024
 //! **************************************************************************
 
 SCHEMATIC START;
 COMP "isEnYMotor" LOCATE = SITE "P85" LEVEL 1;
-COMP "SW0_P66" LOCATE = SITE "P66" LEVEL 1;
+COMP "DIP8_P99" LOCATE = SITE "P99" LEVEL 1;
 COMP "MN4_P88" LOCATE = SITE "P88" LEVEL 1;
 COMP "L7_P67" LOCATE = SITE "P67" LEVEL 1;
 COMP "endYD" LOCATE = SITE "P134" LEVEL 1;

@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.01 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.02 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.01 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.02 secs
  
 --> 
 Reading design: main_motor.prj
@@ -471,7 +471,7 @@ OSC_P123       |    3.233|         |         |         |
 
 
 Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 1.34 secs
+Total CPU time to Xst completion: 1.36 secs
  
 --> 
 

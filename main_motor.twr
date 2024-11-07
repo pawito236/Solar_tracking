@@ -70,7 +70,7 @@ Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-SW0_P66        |enSH           |    9.915|
+DIP8_P99       |enSH           |    7.147|
 endXL          |L3_P79         |    8.556|
 endXR          |L4_P78         |    8.515|
 endYD          |MN3_P92        |    7.676|
@@ -82,7 +82,7 @@ yDirIn         |yDirOut        |    6.418|
 ---------------+---------------+---------+
 
 
-Analysis completed Thu Nov  7 10:07:31 2024 
+Analysis completed Thu Nov  7 16:50:12 2024 
 --------------------------------------------------------------------------------
 
 Trace Settings:

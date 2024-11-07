@@ -103,8 +103,8 @@ NET "enSH" LOC = P139;
 
 
 # --- SW ---
-NET "SW0_P66" LOC = P66;
-
+#NET "SW3_P59" LOC = P59;
+NET "DIP8_P99" LOC = P99;
 
 # --- SW and DIP Test for end sw ---
 #NET "endXR" LOC = P59;

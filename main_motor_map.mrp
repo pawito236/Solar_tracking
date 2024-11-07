@@ -10,7 +10,7 @@ Target Device  : xc6slx9
 Target Package : tqg144
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Thu Nov  7 10:07:00 2024
+Mapped Date    : Thu Nov  7 16:49:40 2024
 
 Design Summary
 --------------
@@ -82,7 +82,7 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                2.64
 
-Peak Memory Usage:  752 MB
+Peak Memory Usage:  754 MB
 Total REAL time to MAP completion:  7 secs 
 Total CPU time to MAP completion:   6 secs 
 
@@ -148,6 +148,7 @@ Section 6 - IOB Properties
 | IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
 |                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| DIP8_P99                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | L3_P79                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | L4_P78                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | L6_P74                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
@@ -155,7 +156,6 @@ Section 6 - IOB Properties
 | MN3_P92                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | MN4_P88                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | OSC_P123                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| SW0_P66                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | enSH                               | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | enXMotor                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | enYMotor                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |

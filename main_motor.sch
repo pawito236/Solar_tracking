@@ -35,8 +35,8 @@
         <signal name="XLXN_81" />
         <signal name="yDirOut" />
         <signal name="xDirOut" />
+        <signal name="DIP8_P99" />
         <signal name="enSH" />
-        <signal name="SW0_P66" />
         <port polarity="Output" name="enXMotor" />
         <port polarity="Output" name="enYMotor" />
         <port polarity="Output" name="isEnXMotor" />
@@ -58,8 +58,8 @@
         <port polarity="Output" name="L7_P67" />
         <port polarity="Output" name="yDirOut" />
         <port polarity="Output" name="xDirOut" />
+        <port polarity="Input" name="DIP8_P99" />
         <port polarity="Output" name="enSH" />
-        <port polarity="Input" name="SW0_P66" />
         <blockdef name="MOTOR_DRIVER_MAIN">
             <timestamp>2024-11-5T16:14:56</timestamp>
             <line x2="384" y1="32" y2="32" x1="320" />
@@ -165,8 +165,8 @@
             <blockpin signalname="XLXN_81" name="I" />
             <blockpin signalname="xDirOut" name="O" />
         </block>
-        <block symbolname="inv" name="XLXI_36">
-            <blockpin signalname="SW0_P66" name="I" />
+        <block symbolname="inv" name="XLXI_61">
+            <blockpin signalname="DIP8_P99" name="I" />
             <blockpin signalname="enSH" name="O" />
         </block>
     </netlist>
@@ -330,14 +330,14 @@
             <wire x2="2336" y1="256" y2="256" x1="2304" />
         </branch>
         <iomarker fontsize="28" x="2336" y="256" name="xDirOut" orien="R0" />
-        <instance x="1008" y="1904" name="XLXI_36" orien="R0" />
+        <instance x="1696" y="1808" name="XLXI_61" orien="R0" />
+        <branch name="DIP8_P99">
+            <wire x2="1696" y1="1776" y2="1776" x1="1664" />
+        </branch>
+        <iomarker fontsize="28" x="1664" y="1776" name="DIP8_P99" orien="R180" />
         <branch name="enSH">
-            <wire x2="1264" y1="1872" y2="1872" x1="1232" />
+            <wire x2="1952" y1="1776" y2="1776" x1="1920" />
         </branch>
-        <branch name="SW0_P66">
-            <wire x2="1008" y1="1872" y2="1872" x1="976" />
-        </branch>
-        <iomarker fontsize="28" x="1264" y="1872" name="enSH" orien="R0" />
-        <iomarker fontsize="28" x="976" y="1872" name="SW0_P66" orien="R180" />
+        <iomarker fontsize="28" x="1952" y="1776" name="enSH" orien="R0" />
     </sheet>
 </drawing>
