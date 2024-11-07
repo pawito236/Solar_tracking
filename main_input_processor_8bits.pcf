@@ -1,10 +1,10 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Nov 07 08:40:30 2024
+// Written by: Map P.20131013 on Thu Nov 07 09:44:00 2024
 //! **************************************************************************
 
 SCHEMATIC START;
 COMP "OSC_P123" LOCATE = SITE "P123" LEVEL 1;
-COMP "SW0_P66" LOCATE = SITE "P66" LEVEL 1;
+COMP "SW7_P55" LOCATE = SITE "P55" LEVEL 1;
 COMP "wr" LOCATE = SITE "P132" LEVEL 1;
 COMP "xDir" LOCATE = SITE "P126" LEVEL 1;
 COMP "yDir" LOCATE = SITE "P131" LEVEL 1;
@@ -43,6 +43,13 @@ COMP "SEG<3>" LOCATE = SITE "P34" LEVEL 1;
 COMP "SEG<4>" LOCATE = SITE "P32" LEVEL 1;
 COMP "SEG<5>" LOCATE = SITE "P29" LEVEL 1;
 COMP "SEG<6>" LOCATE = SITE "P27" LEVEL 1;
+COMP "threshold<0>" LOCATE = SITE "P66" LEVEL 1;
+COMP "threshold<1>" LOCATE = SITE "P62" LEVEL 1;
+COMP "threshold<2>" LOCATE = SITE "P61" LEVEL 1;
+COMP "threshold<3>" LOCATE = SITE "P59" LEVEL 1;
+COMP "threshold<4>" LOCATE = SITE "P58" LEVEL 1;
+COMP "threshold<5>" LOCATE = SITE "P57" LEVEL 1;
+COMP "threshold<6>" LOCATE = SITE "P56" LEVEL 1;
 COMP "COMMON<0>" LOCATE = SITE "P44" LEVEL 1;
 COMP "COMMON<1>" LOCATE = SITE "P43" LEVEL 1;
 COMP "COMMON<2>" LOCATE = SITE "P33" LEVEL 1;

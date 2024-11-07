@@ -22,12 +22,10 @@
         <signal name="yDir" />
         <signal name="GX(7:0)" />
         <signal name="GY(7:0)" />
-        <signal name="SW0_P66" />
+        <signal name="SW7_P55" />
         <signal name="SEG(6:0)" />
         <signal name="COMMON(3:0)" />
-        <signal name="XLXN_22" />
-        <signal name="XLXN_25" />
-        <signal name="XLXN_31" />
+        <signal name="threshold(6:0)" />
         <port polarity="Input" name="OSC_P123" />
         <port polarity="Input" name="wr" />
         <port polarity="Input" name="address_bus(1:0)" />
@@ -38,9 +36,10 @@
         <port polarity="Output" name="yDir" />
         <port polarity="Output" name="GX(7:0)" />
         <port polarity="Output" name="GY(7:0)" />
-        <port polarity="Input" name="SW0_P66" />
+        <port polarity="Input" name="SW7_P55" />
         <port polarity="Output" name="SEG(6:0)" />
         <port polarity="Output" name="COMMON(3:0)" />
+        <port polarity="Input" name="threshold(6:0)" />
         <blockdef name="DISPLAY_LIGHT_8bits">
             <timestamp>2024-11-7T5:57:41</timestamp>
             <rect width="256" x="64" y="-448" height="448" />
@@ -70,13 +69,9 @@
             <line x2="64" y1="-128" y2="-96" x1="64" />
         </blockdef>
         <blockdef name="ANGLE_CALCULATOR_8bits">
-            <timestamp>2024-11-7T7:13:58</timestamp>
-            <rect width="64" x="320" y="340" height="24" />
-            <line x2="384" y1="352" y2="352" x1="320" />
-            <rect width="64" x="320" y="404" height="24" />
-            <line x2="384" y1="416" y2="416" x1="320" />
-            <rect width="64" x="320" y="276" height="24" />
-            <line x2="384" y1="288" y2="288" x1="320" />
+            <timestamp>2024-11-7T9:17:35</timestamp>
+            <rect width="64" x="0" y="468" height="24" />
+            <line x2="0" y1="480" y2="480" x1="64" />
             <rect width="64" x="320" y="20" height="24" />
             <line x2="384" y1="32" y2="32" x1="320" />
             <rect width="64" x="320" y="84" height="24" />
@@ -85,7 +80,6 @@
             <line x2="384" y1="160" y2="160" x1="320" />
             <rect width="64" x="320" y="212" height="24" />
             <line x2="384" y1="224" y2="224" x1="320" />
-            <line x2="0" y1="-352" y2="-352" x1="64" />
             <line x2="0" y1="-272" y2="-272" x1="64" />
             <line x2="0" y1="-192" y2="-192" x1="64" />
             <rect width="64" x="0" y="-124" height="24" />
@@ -100,12 +94,12 @@
             <line x2="384" y1="-96" y2="-96" x1="320" />
             <rect width="64" x="320" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
-            <rect width="256" x="64" y="-384" height="832" />
+            <rect width="256" x="64" y="-384" height="896" />
         </blockdef>
         <block symbolname="DISPLAY_LIGHT_8bits" name="XLXI_3">
             <blockpin signalname="OSC_P123" name="clk" />
             <blockpin signalname="XLXN_6" name="reset" />
-            <blockpin signalname="SW0_P66" name="st" />
+            <blockpin signalname="SW7_P55" name="st" />
             <blockpin signalname="XLXN_4(7:0)" name="A(7:0)" />
             <blockpin signalname="XLXN_3(7:0)" name="B(7:0)" />
             <blockpin signalname="XLXN_2(7:0)" name="C(7:0)" />
@@ -119,8 +113,7 @@
         <block symbolname="gnd" name="XLXI_5">
             <blockpin signalname="XLXN_6" name="G" />
         </block>
-        <block symbolname="ANGLE_CALCULATOR_8bits" name="XLXI_9">
-            <blockpin signalname="XLXN_31" name="clk" />
+        <block symbolname="ANGLE_CALCULATOR_8bits" name="XLXI_11">
             <blockpin signalname="XLXN_5" name="reset" />
             <blockpin signalname="wr" name="wr" />
             <blockpin signalname="address_bus(1:0)" name="address_bus(1:0)" />
@@ -135,12 +128,7 @@
             <blockpin signalname="XLXN_2(7:0)" name="lds(7:0)" />
             <blockpin signalname="GX(7:0)" name="gx(7:0)" />
             <blockpin signalname="GY(7:0)" name="gy(7:0)" />
-            <blockpin name="st(1:0)" />
-            <blockpin name="address(1:0)" />
-            <blockpin name="data(7:0)" />
-        </block>
-        <block symbolname="gnd" name="XLXI_10">
-            <blockpin signalname="XLXN_31" name="G" />
+            <blockpin signalname="threshold(6:0)" name="threshold(6:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -207,10 +195,10 @@
             <wire x2="1648" y1="1216" y2="1216" x1="1616" />
         </branch>
         <iomarker fontsize="28" x="1648" y="1216" name="GY(7:0)" orien="R0" />
-        <branch name="SW0_P66">
+        <branch name="SW7_P55">
             <wire x2="2320" y1="1008" y2="1008" x1="2288" />
         </branch>
-        <iomarker fontsize="28" x="2288" y="1008" name="SW0_P66" orien="R180" />
+        <iomarker fontsize="28" x="2288" y="1008" name="SW7_P55" orien="R180" />
         <branch name="SEG(6:0)">
             <wire x2="2736" y1="880" y2="880" x1="2704" />
         </branch>
@@ -221,8 +209,6 @@
         <iomarker fontsize="28" x="2736" y="1264" name="COMMON(3:0)" orien="R0" />
         <iomarker fontsize="28" x="912" y="1056" name="wr" orien="R180" />
         <iomarker fontsize="28" x="416" y="1136" name="address_bus(1:0)" orien="R180" />
-        <instance x="1232" y="1248" name="XLXI_9" orien="R0">
-        </instance>
         <branch name="OSC_P123">
             <wire x2="2320" y1="880" y2="880" x1="2160" />
         </branch>
@@ -230,10 +216,11 @@
         <branch name="wr">
             <wire x2="1232" y1="1056" y2="1056" x1="912" />
         </branch>
-        <instance x="608" y="1072" name="XLXI_10" orien="R0" />
-        <branch name="XLXN_31">
-            <wire x2="1232" y1="896" y2="896" x1="672" />
-            <wire x2="672" y1="896" y2="944" x1="672" />
+        <instance x="1232" y="1248" name="XLXI_11" orien="R0">
+        </instance>
+        <branch name="threshold(6:0)">
+            <wire x2="1232" y1="1728" y2="1728" x1="1200" />
         </branch>
+        <iomarker fontsize="28" x="1200" y="1728" name="threshold(6:0)" orien="R180" />
     </sheet>
 </drawing>

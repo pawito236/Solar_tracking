@@ -5,14 +5,14 @@ Parameter TMPDIR set to /home/ise/Share_with_VM_Digital/Project/Solar_tracking/x
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.01 secs
+Total CPU time to Xst completion: 0.00 secs
  
 --> 
 Parameter xsthdpdir set to /home/ise/Share_with_VM_Digital/Project/Solar_tracking/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.01 secs
+Total CPU time to Xst completion: 0.00 secs
  
 --> 
 Reading design: ANGLE_CALCULATOR_8bits.prj
@@ -47,8 +47,8 @@ Parsing entity <ANGLE_CALCULATOR_8bits>.
 Parsing architecture <Behavioral> of entity <angle_calculator_8bits>.
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 0.90 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 0.87 secs
  
 --> 
 

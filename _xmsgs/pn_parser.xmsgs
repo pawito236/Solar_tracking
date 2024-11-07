@@ -11,23 +11,5 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Share_with_VM_Digital/Project/Solar_tracking/ANGLE_CALCULATOR_8bits.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Share_with_VM_Digital/Project/Solar_tracking/ANGLE_CALCULATOR_MAIN.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Share_with_VM_Digital/Project/Solar_tracking/ANGLE_CALCULATOR_V2.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Share_with_VM_Digital/Project/Solar_tracking/DISPLAY_LIGHT.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Share_with_VM_Digital/Project/Solar_tracking/DISPLAY_LIGHT_8bits.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Share_with_VM_Digital/Project/Solar_tracking/INPUT_PROCESSOR.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Share_with_VM_Digital/Project/Solar_tracking/MOTOR_DRIVER.vhd&quot; into library work</arg>
-</msg>
-
 </messages>
 

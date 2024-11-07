@@ -38,7 +38,7 @@ Setup/Hold to clock OSC_P123
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-SW0_P66     |    4.153(R)|      SLOW  |   -1.592(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
+SW7_P55     |    3.191(R)|      SLOW  |   -1.222(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Setup/Hold to clock wr
@@ -46,16 +46,23 @@ Setup/Hold to clock wr
               |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source        | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 --------------+------------+------------+------------+------------+------------------+--------+
-address_bus<0>|    4.047(R)|      SLOW  |   -0.814(R)|      SLOW  |wr_BUFGP          |   0.000|
-address_bus<1>|    4.068(R)|      SLOW  |   -0.669(R)|      SLOW  |wr_BUFGP          |   0.000|
-databus<0>    |    1.448(R)|      SLOW  |   -0.093(R)|      SLOW  |wr_BUFGP          |   0.000|
-databus<1>    |    1.381(R)|      SLOW  |   -0.131(R)|      SLOW  |wr_BUFGP          |   0.000|
-databus<2>    |    1.168(R)|      SLOW  |   -0.194(R)|      SLOW  |wr_BUFGP          |   0.000|
-databus<3>    |    1.045(R)|      SLOW  |    0.037(R)|      SLOW  |wr_BUFGP          |   0.000|
-databus<4>    |    1.652(R)|      SLOW  |   -0.053(R)|      SLOW  |wr_BUFGP          |   0.000|
-databus<5>    |    1.805(R)|      SLOW  |   -0.211(R)|      SLOW  |wr_BUFGP          |   0.000|
-databus<6>    |    1.961(R)|      SLOW  |   -0.359(R)|      SLOW  |wr_BUFGP          |   0.000|
-databus<7>    |    1.354(R)|      SLOW  |   -0.359(R)|      SLOW  |wr_BUFGP          |   0.000|
+address_bus<0>|    4.326(R)|      SLOW  |   -1.065(R)|      FAST  |wr_BUFGP          |   0.000|
+address_bus<1>|    4.079(R)|      SLOW  |   -0.871(R)|      SLOW  |wr_BUFGP          |   0.000|
+databus<0>    |    1.216(R)|      SLOW  |   -0.072(R)|      SLOW  |wr_BUFGP          |   0.000|
+databus<1>    |    1.432(R)|      SLOW  |   -0.084(R)|      SLOW  |wr_BUFGP          |   0.000|
+databus<2>    |    2.060(R)|      SLOW  |   -0.139(R)|      SLOW  |wr_BUFGP          |   0.000|
+databus<3>    |    1.412(R)|      SLOW  |   -0.198(R)|      SLOW  |wr_BUFGP          |   0.000|
+databus<4>    |    2.159(R)|      SLOW  |   -0.896(R)|      FAST  |wr_BUFGP          |   0.000|
+databus<5>    |    2.331(R)|      SLOW  |   -1.000(R)|      FAST  |wr_BUFGP          |   0.000|
+databus<6>    |    2.495(R)|      SLOW  |   -1.097(R)|      FAST  |wr_BUFGP          |   0.000|
+databus<7>    |    2.335(R)|      SLOW  |   -0.980(R)|      FAST  |wr_BUFGP          |   0.000|
+threshold<0>  |    4.246(R)|      SLOW  |   -1.419(R)|      FAST  |wr_BUFGP          |   0.000|
+threshold<1>  |    4.731(R)|      SLOW  |   -1.668(R)|      FAST  |wr_BUFGP          |   0.000|
+threshold<2>  |    4.766(R)|      SLOW  |   -1.709(R)|      FAST  |wr_BUFGP          |   0.000|
+threshold<3>  |    4.179(R)|      SLOW  |   -1.524(R)|      FAST  |wr_BUFGP          |   0.000|
+threshold<4>  |    4.068(R)|      SLOW  |   -1.393(R)|      FAST  |wr_BUFGP          |   0.000|
+threshold<5>  |    4.308(R)|      SLOW  |   -1.119(R)|      FAST  |wr_BUFGP          |   0.000|
+threshold<6>  |    4.342(R)|      SLOW  |   -1.535(R)|      FAST  |wr_BUFGP          |   0.000|
 --------------+------------+------------+------------+------------+------------------+--------+
 
 Clock OSC_P123 to Pad
@@ -63,17 +70,17 @@ Clock OSC_P123 to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-COMMON<0>   |         6.959(R)|      SLOW  |         3.561(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
-COMMON<1>   |         6.884(R)|      SLOW  |         3.519(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
-COMMON<2>   |         6.758(R)|      SLOW  |         3.415(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
-COMMON<3>   |         7.525(R)|      SLOW  |         3.867(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
-SEG<0>      |         7.971(R)|      SLOW  |         4.173(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
-SEG<1>      |         8.029(R)|      SLOW  |         4.252(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
-SEG<2>      |         7.624(R)|      SLOW  |         3.897(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
-SEG<3>      |         7.912(R)|      SLOW  |         4.111(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
-SEG<4>      |         7.888(R)|      SLOW  |         4.097(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
-SEG<5>      |         6.968(R)|      SLOW  |         3.539(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
-SEG<6>      |         6.924(R)|      SLOW  |         3.477(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
+COMMON<0>   |         6.958(R)|      SLOW  |         3.560(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
+COMMON<1>   |         7.150(R)|      SLOW  |         3.668(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
+COMMON<2>   |         6.961(R)|      SLOW  |         3.521(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
+COMMON<3>   |         7.600(R)|      SLOW  |         3.945(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
+SEG<0>      |         8.005(R)|      SLOW  |         4.194(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
+SEG<1>      |         8.165(R)|      SLOW  |         4.290(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
+SEG<2>      |         7.912(R)|      SLOW  |         4.111(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
+SEG<3>      |         8.071(R)|      SLOW  |         4.206(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
+SEG<4>      |         8.069(R)|      SLOW  |         4.204(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
+SEG<5>      |         7.538(R)|      SLOW  |         3.887(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
+SEG<6>      |         7.496(R)|      SLOW  |         3.886(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock wr to Pad
@@ -81,26 +88,26 @@ Clock wr to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-GX<0>       |         6.873(R)|      SLOW  |         3.462(R)|      FAST  |wr_BUFGP          |   0.000|
-GX<1>       |         7.293(R)|      SLOW  |         3.729(R)|      FAST  |wr_BUFGP          |   0.000|
-GX<2>       |         7.068(R)|      SLOW  |         3.586(R)|      FAST  |wr_BUFGP          |   0.000|
-GX<3>       |         7.283(R)|      SLOW  |         3.707(R)|      FAST  |wr_BUFGP          |   0.000|
-GX<4>       |         7.520(R)|      SLOW  |         3.834(R)|      FAST  |wr_BUFGP          |   0.000|
-GX<5>       |         8.494(R)|      SLOW  |         4.429(R)|      FAST  |wr_BUFGP          |   0.000|
-GX<6>       |         8.505(R)|      SLOW  |         4.422(R)|      FAST  |wr_BUFGP          |   0.000|
-GX<7>       |         8.465(R)|      SLOW  |         4.456(R)|      FAST  |wr_BUFGP          |   0.000|
-GY<0>       |         8.020(R)|      SLOW  |         4.160(R)|      FAST  |wr_BUFGP          |   0.000|
-GY<1>       |         8.084(R)|      SLOW  |         4.241(R)|      FAST  |wr_BUFGP          |   0.000|
-GY<2>       |         7.756(R)|      SLOW  |         4.001(R)|      FAST  |wr_BUFGP          |   0.000|
-GY<3>       |         7.756(R)|      SLOW  |         4.001(R)|      FAST  |wr_BUFGP          |   0.000|
-GY<4>       |         8.176(R)|      SLOW  |         4.292(R)|      FAST  |wr_BUFGP          |   0.000|
-GY<5>       |         8.176(R)|      SLOW  |         4.292(R)|      FAST  |wr_BUFGP          |   0.000|
-GY<6>       |         8.196(R)|      SLOW  |         4.288(R)|      FAST  |wr_BUFGP          |   0.000|
-GY<7>       |         8.165(R)|      SLOW  |         4.257(R)|      FAST  |wr_BUFGP          |   0.000|
-isdx        |         8.788(R)|      SLOW  |         4.631(R)|      FAST  |wr_BUFGP          |   0.000|
-isdy        |         8.009(R)|      SLOW  |         4.287(R)|      FAST  |wr_BUFGP          |   0.000|
-xDir        |         8.657(R)|      SLOW  |         4.527(R)|      FAST  |wr_BUFGP          |   0.000|
-yDir        |         7.684(R)|      SLOW  |         4.083(R)|      FAST  |wr_BUFGP          |   0.000|
+GX<0>       |         7.214(R)|      SLOW  |         3.665(R)|      FAST  |wr_BUFGP          |   0.000|
+GX<1>       |         7.072(R)|      SLOW  |         3.592(R)|      FAST  |wr_BUFGP          |   0.000|
+GX<2>       |         7.212(R)|      SLOW  |         3.629(R)|      FAST  |wr_BUFGP          |   0.000|
+GX<3>       |         6.800(R)|      SLOW  |         3.399(R)|      FAST  |wr_BUFGP          |   0.000|
+GX<4>       |         6.933(R)|      SLOW  |         3.495(R)|      FAST  |wr_BUFGP          |   0.000|
+GX<5>       |         7.839(R)|      SLOW  |         4.018(R)|      FAST  |wr_BUFGP          |   0.000|
+GX<6>       |         7.863(R)|      SLOW  |         4.063(R)|      FAST  |wr_BUFGP          |   0.000|
+GX<7>       |         8.034(R)|      SLOW  |         4.196(R)|      FAST  |wr_BUFGP          |   0.000|
+GY<0>       |         7.317(R)|      SLOW  |         3.741(R)|      FAST  |wr_BUFGP          |   0.000|
+GY<1>       |         7.301(R)|      SLOW  |         3.730(R)|      FAST  |wr_BUFGP          |   0.000|
+GY<2>       |         7.295(R)|      SLOW  |         3.757(R)|      FAST  |wr_BUFGP          |   0.000|
+GY<3>       |         7.276(R)|      SLOW  |         3.702(R)|      FAST  |wr_BUFGP          |   0.000|
+GY<4>       |         7.089(R)|      SLOW  |         3.607(R)|      FAST  |wr_BUFGP          |   0.000|
+GY<5>       |         6.878(R)|      SLOW  |         3.467(R)|      FAST  |wr_BUFGP          |   0.000|
+GY<6>       |         6.856(R)|      SLOW  |         3.453(R)|      FAST  |wr_BUFGP          |   0.000|
+GY<7>       |         6.856(R)|      SLOW  |         3.453(R)|      FAST  |wr_BUFGP          |   0.000|
+isdx        |         9.232(R)|      SLOW  |         4.966(R)|      FAST  |wr_BUFGP          |   0.000|
+isdy        |         9.078(R)|      SLOW  |         4.889(R)|      FAST  |wr_BUFGP          |   0.000|
+xDir        |         8.508(R)|      SLOW  |         4.440(R)|      FAST  |wr_BUFGP          |   0.000|
+yDir        |         8.009(R)|      SLOW  |         4.201(R)|      FAST  |wr_BUFGP          |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock OSC_P123
@@ -108,8 +115,8 @@ Clock to Setup on destination clock OSC_P123
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-OSC_P123       |    8.045|         |         |         |
-wr             |    3.117|         |         |         |
+OSC_P123       |    4.278|         |         |         |
+wr             |    2.767|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock wr
@@ -117,11 +124,11 @@ Clock to Setup on destination clock wr
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-wr             |    6.218|         |         |         |
+wr             |    5.810|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Thu Nov  7 08:41:30 2024 
+Analysis completed Thu Nov  7 09:44:39 2024 
 --------------------------------------------------------------------------------
 
 Trace Settings:

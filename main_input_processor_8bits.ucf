@@ -119,7 +119,14 @@ NET "isdx" LOC = P133;
 NET "isdy" LOC = P137;
 
 #NET "enSH" LOC = P139;
-NET "SW0_P66" LOC = P66;
+NET "SW7_P55" LOC = P55;
+NET "threshold[6]" LOC = P56;
+NET "threshold[5]" LOC = P57;
+NET "threshold[4]" LOC = P58;
+NET "threshold[3]" LOC = P59;
+NET "threshold[2]" LOC = P61;
+NET "threshold[1]" LOC = P62;
+NET "threshold[0]" LOC = P66;
 
 
 # --- SW and DIP Test for end sw ---
