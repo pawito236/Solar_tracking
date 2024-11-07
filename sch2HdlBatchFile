@@ -1,1 +1,1 @@
-sch2hdl,-intstyle,ise,-family,spartan6,-verilog,/home/ise/Share_with_VM_Digital/Project/Solar_tracking/main_input_processor.vf,-w,/home/ise/Share_with_VM_Digital/Project/Solar_tracking/main_input_processor.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,/home/ise/Share_with_VM_Digital/Project/Solar_tracking/main_input_processor_8bits.vf,-w,/home/ise/Share_with_VM_Digital/Project/Solar_tracking/main_input_processor_8bits.sch

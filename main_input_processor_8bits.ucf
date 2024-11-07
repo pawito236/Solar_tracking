@@ -1,0 +1,119 @@
+# --- Display ---
+NET "SEG[6]" LOC = P27;
+NET "SEG[5]" LOC = P29;
+NET "SEG[4]" LOC = P32;
+NET "SEG[3]" LOC = P34;
+NET "SEG[2]" LOC = P35;
+NET "SEG[1]" LOC = P40;
+NET "SEG[0]" LOC = P41;
+
+NET "COMMON[3]" LOC = P30;
+NET "COMMON[2]" LOC = P33;
+NET "COMMON[1]" LOC = P43;
+NET "COMMON[0]" LOC = P44;
+
+
+# --- Data Bus ---
+NET "databus[7]" LOC = P5; //MSB
+NET "databus[6]" LOC = P7;
+NET "databus[5]" LOC = P9;
+NET "databus[4]" LOC = P11;
+NET "databus[3]" LOC = P14;
+NET "databus[2]" LOC = P16;
+NET "databus[1]" LOC = P21;
+NET "databus[0]" LOC = P23;
+
+# --- Address bus ---
+NET "address_bus[1]" LOC = P124; //MSB
+NET "address_bus[0]" LOC = P127; 
+
+# --- Control bus WR ---
+NET "wr" LOC = P132; 
+
+
+
+#NET "L0_P82" LOC = P82;
+#NET "L1_P81" LOC = P81;
+#NET "L2_P80" LOC = P80;
+#NET "L3_P79" LOC = P79;
+#NET "L4_P78" LOC = P78;
+#NET "L5_P75" LOC = P75;
+
+#NET "L7_P67" LOC = P67;
+#NET "L6_P74" LOC = P74;
+
+
+#NET "MN3_P92" LOC = P92;
+#NET "MN4_P88" LOC = P88;
+#NET "MN6_P85" LOC = P85;
+#NET "MN7_P84" LOC = P84;
+
+
+
+NET "GX[7]" LOC = P67; //MSB
+NET "GX[6]" LOC = P74;
+NET "GX[5]" LOC = P75;
+NET "GX[4]" LOC = P78;
+NET "GX[3]" LOC = P79;
+NET "GX[2]" LOC = P80;
+NET "GX[1]" LOC = P81;
+NET "GX[0]" LOC = P82; //LSB
+
+
+
+NET "GY[7]" LOC = P84; //MSB
+NET "GY[6]" LOC = P85;
+NET "GY[5]" LOC = P87;
+NET "GY[4]" LOC = P88;
+NET "GY[3]" LOC = P92;
+NET "GY[2]" LOC = P93;
+NET "GY[1]" LOC = P94;
+NET "GY[0]" LOC = P95; //LSB
+
+//MSB
+#NET "RT[2]" LOC = P101;
+#NET "RT[1]" LOC = P100;
+#NET "RT[0]" LOC = P99;
+
+//MSB
+#NET "RD[2]" LOC = P61;
+#NET "RD[1]" LOC = P62;
+#NET "RD[0]" LOC = P66;
+
+//MSB
+#NET "LT[2]" LOC = P112;
+#NET "LT[1]" LOC = P111;
+#NET "LT[0]" LOC = P105;
+
+//MSB
+#NET "LD[2]" LOC = P55;
+#NET "LD[1]" LOC = P56;
+#NET "LD[0]" LOC = P57;
+
+# PlanAhead Generated physical constraints 
+
+NET "OSC_P123" LOC = P123;
+#NET "endXMotor" LOC = P131;
+#NET "endYMotor" LOC = P137;
+
+NET "xDir" LOC = P126;
+NET "yDir" LOC = P131;
+NET "isdx" LOC = P133;
+NET "isdy" LOC = P137;
+
+#NET "enSH" LOC = P139;
+NET "SW0_P66" LOC = P66;
+
+
+# --- SW and DIP Test for end sw ---
+#NET "endXR" LOC = P59;
+#NET "endXL" LOC = P58;
+#NET "endYD" LOC = P102;
+#NET "endYU" LOC = P104;
+
+# ---
+
+#NET "endXR" LOC = P124;
+#NET "endXL" LOC = P127;
+#NET "endYD" LOC = P134;
+#NET "endYU" LOC = P132;

@@ -1,0 +1,864 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.00 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.00 secs
+ 
+--> 
+Reading design: main_input_processor_8bits.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "main_input_processor_8bits.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "main_input_processor_8bits"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : main_input_processor_8bits
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/main_input_processor_8bits.vf" into library work
+Parsing module <main_input_processor_8bits>.
+Parsing VHDL file "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/DISPLAY_LIGHT_8bits.vhd" into library work
+Parsing entity <DISPLAY_LIGHT_8bits>.
+Parsing architecture <Behavioral> of entity <display_light_8bits>.
+Parsing VHDL file "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/ANGLE_CALCULATOR_8bits.vhd" into library work
+Parsing entity <ANGLE_CALCULATOR_8bits>.
+Parsing architecture <Behavioral> of entity <angle_calculator_8bits>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <main_input_processor_8bits>.
+Going to vhdl side to elaborate module ANGLE_CALCULATOR_8bits
+
+Elaborating entity <ANGLE_CALCULATOR_8bits> (architecture <Behavioral>) from library <work>.
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module DISPLAY_LIGHT_8bits
+
+Elaborating entity <DISPLAY_LIGHT_8bits> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/DISPLAY_LIGHT_8bits.vhd" Line 121. Case statement is complete. others clause is never selected
+Back to verilog to continue elaboration
+
+Elaborating module <GND>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <main_input_processor_8bits>.
+    Related source file is "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/main_input_processor_8bits.vf".
+    Summary:
+	no macro.
+Unit <main_input_processor_8bits> synthesized.
+
+Synthesizing Unit <ANGLE_CALCULATOR_8bits>.
+    Related source file is "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/ANGLE_CALCULATOR_8bits.vhd".
+    Found 8-bit register for signal <rts>.
+    Found 8-bit register for signal <rds>.
+    Found 8-bit register for signal <lts>.
+    Found 8-bit register for signal <lds>.
+    Found 8-bit register for signal <gx>.
+    Found 8-bit register for signal <gy>.
+    Found 3-bit register for signal <state>.
+    Found 1-bit register for signal <isdx>.
+    Found 1-bit register for signal <isdy>.
+    Found 32-bit register for signal <rti>.
+    Found 32-bit register for signal <rdi>.
+    Found 32-bit register for signal <lti>.
+    Found 32-bit register for signal <ldi>.
+    Found 32-bit register for signal <avt>.
+    Found 32-bit register for signal <avd>.
+    Found 32-bit register for signal <avl>.
+    Found 32-bit register for signal <avr>.
+    Found 32-bit register for signal <dy>.
+    Found 32-bit register for signal <dx>.
+    Found 1-bit register for signal <yDir>.
+    Found 1-bit register for signal <xDir>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 13                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | read_rt                                        |
+    | Power Up State     | read_rt                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit adder for signal <lti[31]_rti[31]_add_16_OUT> created at line 109.
+    Found 31-bit adder for signal <lti[31]_GND_5_o_add_17_OUT> created at line 109.
+    Found 32-bit adder for signal <ldi[31]_rdi[31]_add_18_OUT> created at line 110.
+    Found 31-bit adder for signal <ldi[31]_GND_5_o_add_19_OUT> created at line 110.
+    Found 32-bit adder for signal <lti[31]_ldi[31]_add_20_OUT> created at line 111.
+    Found 31-bit adder for signal <lti[31]_GND_5_o_add_21_OUT> created at line 111.
+    Found 32-bit adder for signal <rti[31]_rdi[31]_add_22_OUT> created at line 112.
+    Found 31-bit adder for signal <rti[31]_GND_5_o_add_23_OUT> created at line 112.
+    Found 32-bit adder for signal <n0202[31:0]> created at line 119.
+    Found 32-bit adder for signal <n0204[31:0]> created at line 133.
+    Found 32-bit subtractor for signal <avt[31]_avd[31]_sub_25_OUT<31:0>> created at line 115.
+    Found 32-bit subtractor for signal <avl[31]_avr[31]_sub_26_OUT<31:0>> created at line 116.
+    Found 32-bit comparator greater for signal <GND_5_o_GND_5_o_LessThan_28_o> created at line 119
+    Found 32-bit comparator greater for signal <avt[31]_avd[31]_LessThan_29_o> created at line 120
+    Found 32-bit comparator greater for signal <GND_5_o_GND_5_o_LessThan_33_o> created at line 133
+    Found 32-bit comparator lessequal for signal <avl[31]_avr[31]_LessThan_34_o> created at line 134
+    Summary:
+	inferred  12 Adder/Subtractor(s).
+	inferred 372 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <ANGLE_CALCULATOR_8bits> synthesized.
+
+Synthesizing Unit <DISPLAY_LIGHT_8bits>.
+    Related source file is "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/DISPLAY_LIGHT_8bits.vhd".
+    Found 4-bit register for signal <common>.
+    Found 7-bit register for signal <seg>.
+    Found 32-bit register for signal <counter>.
+    Found 2-bit register for signal <state>.
+    Found 4-bit register for signal <digit0_val>.
+    Found 4-bit register for signal <digit1_val>.
+    Found 4-bit register for signal <digit2_val>.
+    Found 4-bit register for signal <digit3_val>.
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | digit0                                         |
+    | Power Up State     | digit0                                         |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit adder for signal <counter[31]_GND_6_o_add_1_OUT> created at line 80.
+    Found 16x7-bit Read Only RAM for signal <digit0_val[3]_PWR_7_o_wide_mux_6_OUT>
+    Found 16x7-bit Read Only RAM for signal <digit1_val[3]_PWR_7_o_wide_mux_7_OUT>
+    Found 16x7-bit Read Only RAM for signal <digit2_val[3]_PWR_7_o_wide_mux_8_OUT>
+    Found 16x7-bit Read Only RAM for signal <digit3_val[3]_PWR_7_o_wide_mux_9_OUT>
+    Found 7-bit 4-to-1 multiplexer for signal <state[1]_digit3_val[3]_wide_mux_11_OUT> created at line 100.
+    Found 32-bit comparator greater for signal <GND_6_o_counter[31]_LessThan_1_o> created at line 79
+    Summary:
+	inferred   4 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  59 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   6 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <DISPLAY_LIGHT_8bits> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 16x7-bit single-port Read Only RAM                    : 4
+# Adders/Subtractors                                   : 13
+ 31-bit adder                                          : 4
+ 32-bit adder                                          : 7
+ 32-bit subtractor                                     : 2
+# Registers                                            : 27
+ 1-bit register                                        : 4
+ 32-bit register                                       : 11
+ 4-bit register                                        : 5
+ 7-bit register                                        : 1
+ 8-bit register                                        : 6
+# Comparators                                          : 5
+ 32-bit comparator greater                             : 4
+ 32-bit comparator lessequal                           : 1
+# Multiplexers                                         : 8
+ 32-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 4
+ 7-bit 4-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 2
+# Xors                                                 : 62
+ 1-bit xor2                                            : 62
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <ldi_8> in Unit <XLXI_2> is equivalent to the following 22 FFs/Latches, which will be removed : <ldi_9> <ldi_10> <ldi_11> <ldi_12> <ldi_13> <ldi_14> <ldi_15> <ldi_16> <ldi_17> <ldi_18> <ldi_19> <ldi_20> <ldi_21> <ldi_22> <ldi_23> <ldi_24> <ldi_25> <ldi_26> <ldi_27> <ldi_28> <ldi_29> <ldi_30> 
+INFO:Xst:2261 - The FF/Latch <lti_8> in Unit <XLXI_2> is equivalent to the following 22 FFs/Latches, which will be removed : <lti_9> <lti_10> <lti_11> <lti_12> <lti_13> <lti_14> <lti_15> <lti_16> <lti_17> <lti_18> <lti_19> <lti_20> <lti_21> <lti_22> <lti_23> <lti_24> <lti_25> <lti_26> <lti_27> <lti_28> <lti_29> <lti_30> 
+INFO:Xst:2261 - The FF/Latch <rdi_8> in Unit <XLXI_2> is equivalent to the following 22 FFs/Latches, which will be removed : <rdi_9> <rdi_10> <rdi_11> <rdi_12> <rdi_13> <rdi_14> <rdi_15> <rdi_16> <rdi_17> <rdi_18> <rdi_19> <rdi_20> <rdi_21> <rdi_22> <rdi_23> <rdi_24> <rdi_25> <rdi_26> <rdi_27> <rdi_28> <rdi_29> <rdi_30> 
+INFO:Xst:2261 - The FF/Latch <rti_8> in Unit <XLXI_2> is equivalent to the following 22 FFs/Latches, which will be removed : <rti_9> <rti_10> <rti_11> <rti_12> <rti_13> <rti_14> <rti_15> <rti_16> <rti_17> <rti_18> <rti_19> <rti_20> <rti_21> <rti_22> <rti_23> <rti_24> <rti_25> <rti_26> <rti_27> <rti_28> <rti_29> <rti_30> 
+WARNING:Xst:1426 - The value init of the FF/Latch lti_31 hinder the constant cleaning in the block XLXI_2.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1426 - The value init of the FF/Latch ldi_31 hinder the constant cleaning in the block XLXI_2.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1426 - The value init of the FF/Latch rti_31 hinder the constant cleaning in the block XLXI_2.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1426 - The value init of the FF/Latch rdi_31 hinder the constant cleaning in the block XLXI_2.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1293 - FF/Latch <rti_8> has a constant value of 0 in block <XLXI_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ldi_8> has a constant value of 0 in block <XLXI_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <rdi_8> has a constant value of 0 in block <XLXI_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <lti_8> has a constant value of 0 in block <XLXI_2>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <DISPLAY_LIGHT_8bits>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+INFO:Xst:3231 - The small RAM <Mram_digit0_val[3]_PWR_7_o_wide_mux_6_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <digit0_val>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_digit1_val[3]_PWR_7_o_wide_mux_7_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <digit1_val>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_digit2_val[3]_PWR_7_o_wide_mux_8_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <digit2_val>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_digit3_val[3]_PWR_7_o_wide_mux_9_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <digit3_val>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <DISPLAY_LIGHT_8bits> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 16x7-bit single-port distributed Read Only RAM        : 4
+# Adders/Subtractors                                   : 12
+ 31-bit adder                                          : 4
+ 32-bit adder                                          : 6
+ 32-bit subtractor                                     : 2
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 399
+ Flip-Flops                                            : 399
+# Comparators                                          : 5
+ 32-bit comparator greater                             : 4
+ 32-bit comparator lessequal                           : 1
+# Multiplexers                                         : 7
+ 4-bit 2-to-1 multiplexer                              : 4
+ 7-bit 4-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 2
+# Xors                                                 : 62
+ 1-bit xor2                                            : 62
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch lti_31 hinder the constant cleaning in the block ANGLE_CALCULATOR_8bits.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1426 - The value init of the FF/Latch ldi_31 hinder the constant cleaning in the block ANGLE_CALCULATOR_8bits.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1426 - The value init of the FF/Latch rti_31 hinder the constant cleaning in the block ANGLE_CALCULATOR_8bits.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1426 - The value init of the FF/Latch rdi_31 hinder the constant cleaning in the block ANGLE_CALCULATOR_8bits.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1293 - FF/Latch <rdi_30> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rdi_29> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rdi_28> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rdi_27> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rdi_26> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rdi_25> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rdi_24> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rdi_23> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rdi_22> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rdi_21> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rdi_20> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rdi_19> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rdi_18> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rdi_17> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rdi_16> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rdi_15> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rdi_14> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rdi_13> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rdi_12> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rdi_11> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rdi_10> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rdi_9> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rdi_8> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <lti_30> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <lti_29> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <lti_28> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <lti_27> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <lti_26> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <lti_25> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <lti_24> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <lti_23> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <lti_22> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <lti_21> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <lti_20> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <lti_19> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <lti_18> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <lti_17> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <lti_16> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <lti_15> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <lti_14> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <lti_13> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <lti_12> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <lti_11> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <lti_10> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <lti_9> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <lti_8> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rti_30> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rti_29> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rti_28> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rti_27> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rti_26> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rti_25> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rti_24> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rti_23> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rti_22> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rti_21> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rti_20> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rti_19> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rti_18> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rti_17> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rti_16> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rti_15> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rti_14> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rti_13> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rti_12> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rti_11> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rti_10> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rti_9> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rti_8> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ldi_30> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ldi_29> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ldi_28> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ldi_27> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ldi_26> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ldi_25> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ldi_24> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ldi_23> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ldi_22> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ldi_21> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ldi_20> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ldi_19> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ldi_18> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ldi_17> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ldi_16> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ldi_15> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ldi_14> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ldi_13> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ldi_12> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ldi_11> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ldi_10> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ldi_9> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ldi_8> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <XLXI_2/FSM_0> on signal <state[1:3]> with user encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ read_rt   | 000
+ read_rd   | 001
+ read_lt   | 010
+ read_ld   | 011
+ calculate | 100
+-----------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <XLXI_3/FSM_1> on signal <state[1:2]> with user encoding.
+--------------------
+ State  | Encoding
+--------------------
+ digit0 | 00
+ digit1 | 01
+ digit2 | 10
+ digit3 | 11
+--------------------
+WARNING:Xst:1293 - FF/Latch <avl_29> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avl_28> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avl_27> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avl_26> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avl_25> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avl_24> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avl_23> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avl_22> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avl_21> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avl_20> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avl_19> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avl_18> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avl_17> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avl_16> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avl_15> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avl_14> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avl_13> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avl_12> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avl_11> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avl_10> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avl_9> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avr_29> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avr_28> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avr_27> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avr_26> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avr_25> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avr_24> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avr_23> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avr_22> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avr_21> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avr_20> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avr_19> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avr_18> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avr_17> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avr_16> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avr_15> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avr_14> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avr_13> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avr_12> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avr_11> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avr_10> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avr_9> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avt_29> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avt_28> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avt_27> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avt_26> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avt_25> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avt_24> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avt_23> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avt_22> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avt_21> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avt_20> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avt_19> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avt_18> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avt_17> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avt_16> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avt_15> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avt_14> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avt_13> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avt_12> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avt_11> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avt_10> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avt_9> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avd_29> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avd_28> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avd_27> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avd_26> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avd_25> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avd_24> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avd_23> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avd_22> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avd_21> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avd_20> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avd_19> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avd_18> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avd_17> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avd_16> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avd_15> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avd_14> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avd_13> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avd_12> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avd_11> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avd_10> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <avd_9> has a constant value of 0 in block <ANGLE_CALCULATOR_8bits>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <main_input_processor_8bits> ...
+
+Optimizing unit <ANGLE_CALCULATOR_8bits> ...
+
+Optimizing unit <DISPLAY_LIGHT_8bits> ...
+WARNING:Xst:1293 - FF/Latch <XLXI_3/counter_15> has a constant value of 0 in block <main_input_processor_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_3/counter_16> has a constant value of 0 in block <main_input_processor_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_3/counter_17> has a constant value of 0 in block <main_input_processor_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_3/counter_18> has a constant value of 0 in block <main_input_processor_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_3/counter_19> has a constant value of 0 in block <main_input_processor_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_3/counter_20> has a constant value of 0 in block <main_input_processor_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_3/counter_21> has a constant value of 0 in block <main_input_processor_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_3/counter_22> has a constant value of 0 in block <main_input_processor_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_3/counter_23> has a constant value of 0 in block <main_input_processor_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_3/counter_24> has a constant value of 0 in block <main_input_processor_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_3/counter_25> has a constant value of 0 in block <main_input_processor_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_3/counter_26> has a constant value of 0 in block <main_input_processor_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_3/counter_27> has a constant value of 0 in block <main_input_processor_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_3/counter_28> has a constant value of 0 in block <main_input_processor_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_3/counter_29> has a constant value of 0 in block <main_input_processor_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_3/counter_30> has a constant value of 0 in block <main_input_processor_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_3/counter_31> has a constant value of 0 in block <main_input_processor_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/avt_8> has a constant value of 0 in block <main_input_processor_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/avd_8> has a constant value of 0 in block <main_input_processor_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/avl_8> has a constant value of 0 in block <main_input_processor_8bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/avr_8> has a constant value of 0 in block <main_input_processor_8bits>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <XLXI_2/dx_29> in Unit <main_input_processor_8bits> is equivalent to the following 21 FFs/Latches, which will be removed : <XLXI_2/dx_28> <XLXI_2/dx_27> <XLXI_2/dx_26> <XLXI_2/dx_25> <XLXI_2/dx_24> <XLXI_2/dx_23> <XLXI_2/dx_22> <XLXI_2/dx_21> <XLXI_2/dx_20> <XLXI_2/dx_19> <XLXI_2/dx_18> <XLXI_2/dx_17> <XLXI_2/dx_16> <XLXI_2/dx_15> <XLXI_2/dx_14> <XLXI_2/dx_13> <XLXI_2/dx_12> <XLXI_2/dx_11> <XLXI_2/dx_10> <XLXI_2/dx_9> <XLXI_2/dx_8> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/dy_29> in Unit <main_input_processor_8bits> is equivalent to the following 21 FFs/Latches, which will be removed : <XLXI_2/dy_28> <XLXI_2/dy_27> <XLXI_2/dy_26> <XLXI_2/dy_25> <XLXI_2/dy_24> <XLXI_2/dy_23> <XLXI_2/dy_22> <XLXI_2/dy_21> <XLXI_2/dy_20> <XLXI_2/dy_19> <XLXI_2/dy_18> <XLXI_2/dy_17> <XLXI_2/dy_16> <XLXI_2/dy_15> <XLXI_2/dy_14> <XLXI_2/dy_13> <XLXI_2/dy_12> <XLXI_2/dy_11> <XLXI_2/dy_10> <XLXI_2/dy_9> <XLXI_2/dy_8> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block main_input_processor_8bits, actual ratio is 8.
+INFO:Xst:2261 - The FF/Latch <XLXI_2/lti_0> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/lts_0> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/ldi_7> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/lds_7> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/rdi_7> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/rds_7> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/rti_6> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/rts_6> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/ldi_2> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/lds_2> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/rdi_2> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/rds_2> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/rti_1> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/rts_1> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/lti_6> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/lts_6> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/lti_1> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/lts_1> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/ldi_3> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/lds_3> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/rti_7> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/rts_7> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/rdi_3> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/rds_3> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/rti_2> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/rts_2> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/lti_7> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/lts_7> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/lti_2> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/lts_2> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/ldi_4> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/lds_4> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/rdi_4> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/rds_4> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/rti_3> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/rts_3> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/lti_3> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/lts_3> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/ldi_5> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/lds_5> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/rti_4> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/rts_4> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/ldi_0> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/lds_0> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/rdi_5> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/rds_5> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/rdi_0> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/rds_0> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/lti_4> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/lts_4> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/ldi_6> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/lds_6> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/rdi_6> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/rds_6> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/rti_5> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/rts_5> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/ldi_1> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/lds_1> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/rdi_1> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/rds_1> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/rti_0> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/rts_0> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/lti_5> in Unit <main_input_processor_8bits> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/lts_5> 
+FlipFlop XLXI_2/dx_29 has been replicated 1 time(s)
+FlipFlop XLXI_2/dx_31 has been replicated 2 time(s)
+FlipFlop XLXI_2/dy_29 has been replicated 1 time(s)
+FlipFlop XLXI_2/dy_31 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 171
+ Flip-Flops                                            : 171
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : main_input_processor_8bits.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 665
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 4
+#      LUT2                        : 145
+#      LUT3                        : 33
+#      LUT4                        : 47
+#      LUT5                        : 22
+#      LUT6                        : 43
+#      MUXCY                       : 229
+#      MUXF7                       : 4
+#      VCC                         : 1
+#      XORCY                       : 135
+# FlipFlops/Latches                : 171
+#      FD                          : 22
+#      FDE                         : 149
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 43
+#      IBUF                        : 12
+#      OBUF                        : 31
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             171  out of  11440     1%  
+ Number of Slice LUTs:                  295  out of   5720     5%  
+    Number used as Logic:               295  out of   5720     5%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    345
+   Number with an unused Flip Flop:     174  out of    345    50%  
+   Number with an unused LUT:            50  out of    345    14%  
+   Number of fully used LUT-FF pairs:   121  out of    345    35%  
+   Number of unique control sets:         7
+
+IO Utilization: 
+ Number of IOs:                          44
+ Number of bonded IOBs:                  44  out of    102    43%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+OSC_P123                           | BUFGP                  | 171   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.864ns (Maximum Frequency: 205.596MHz)
+   Minimum input arrival time before clock: 3.713ns
+   Maximum output required time after clock: 3.668ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'OSC_P123'
+  Clock period: 4.864ns (frequency: 205.596MHz)
+  Total number of paths / destination ports: 10301 / 284
+-------------------------------------------------------------------------
+Delay:               4.864ns (Levels of Logic = 7)
+  Source:            XLXI_2/dx_31_1 (FF)
+  Destination:       XLXI_2/xDir (FF)
+  Source Clock:      OSC_P123 rising
+  Destination Clock: OSC_P123 rising
+
+  Data Path: XLXI_2/dx_31_1 to XLXI_2/xDir
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             10   0.447   0.857  XLXI_2/dx_31_1 (XLXI_2/dx_31_1)
+     LUT2:I1->O            1   0.205   0.000  XLXI_2/Mxor_dx[1]_dx[31]_XOR_169_o_xo<0>1 (XLXI_2/dx[1]_dx[31]_XOR_169_o)
+     MUXCY:S->O            1   0.172   0.000  XLXI_2/Madd_n0204[31:0]_cy<1> (XLXI_2/Madd_n0204[31:0]_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_2/Madd_n0204[31:0]_cy<2> (XLXI_2/Madd_n0204[31:0]_cy<2>)
+     XORCY:CI->O           3   0.180   0.879  XLXI_2/Madd_n0204[31:0]_xor<3> (XLXI_2/n0204[31:0]<3>)
+     LUT4:I1->O            1   0.205   0.580  XLXI_2/_n0485_inv5_SW0 (N26)
+     LUT6:I5->O            1   0.205   0.808  XLXI_2/_n0485_inv9_SW0 (N8)
+     LUT6:I3->O            1   0.205   0.000  XLXI_2/xDir_rstpot (XLXI_2/xDir_rstpot)
+     FD:D                      0.102          XLXI_2/xDir
+    ----------------------------------------
+    Total                      4.864ns (1.740ns logic, 3.124ns route)
+                                       (35.8% logic, 64.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'OSC_P123'
+  Total number of paths / destination ports: 165 / 87
+-------------------------------------------------------------------------
+Offset:              3.713ns (Levels of Logic = 2)
+  Source:            address_bus<1> (PAD)
+  Destination:       XLXI_2/lti_31 (FF)
+  Destination Clock: OSC_P123 rising
+
+  Data Path: address_bus<1> to XLXI_2/lti_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   1.222   1.138  address_bus_1_IBUF (address_bus_1_IBUF)
+     LUT6:I0->O            9   0.203   0.829  XLXI_2/_n0425_inv2 (XLXI_2/_n0425_inv)
+     FDE:CE                    0.322          XLXI_2/lti_0
+    ----------------------------------------
+    Total                      3.713ns (1.747ns logic, 1.966ns route)
+                                       (47.0% logic, 53.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'OSC_P123'
+  Total number of paths / destination ports: 31 / 31
+-------------------------------------------------------------------------
+Offset:              3.668ns (Levels of Logic = 1)
+  Source:            XLXI_2/xDir (FF)
+  Destination:       xDir (PAD)
+  Source Clock:      OSC_P123 rising
+
+  Data Path: XLXI_2/xDir to xDir
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   0.650  XLXI_2/xDir (XLXI_2/xDir)
+     OBUF:I->O                 2.571          xDir_OBUF (xDir)
+    ----------------------------------------
+    Total                      3.668ns (3.018ns logic, 0.650ns route)
+                                       (82.3% logic, 17.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock OSC_P123
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+OSC_P123       |    4.864|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 1.12 secs
+ 
+--> 
+
+
+Total memory usage is 488156 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  209 (   0 filtered)
+Number of infos    :   42 (   0 filtered)
+

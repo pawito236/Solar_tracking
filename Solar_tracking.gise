@@ -28,6 +28,11 @@
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ANGLE_CALCULAOTR.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="ANGLE_CALCULAOTR.xst"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="ANGLE_CALCULATOR.spl"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ANGLE_CALCULATOR_8bits.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="ANGLE_CALCULATOR_8bits.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ANGLE_CALCULATOR_8bits.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ANGLE_CALCULATOR_8bits.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="ANGLE_CALCULATOR_8bits.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ANGLE_CALCULATOR_MAIN.prj"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="ANGLE_CALCULATOR_MAIN.spl"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ANGLE_CALCULATOR_MAIN.stx"/>
@@ -43,6 +48,11 @@
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="DISPLAY_LIGHT.stx"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="DISPLAY_LIGHT.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="DISPLAY_LIGHT.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DISPLAY_LIGHT_8bits.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="DISPLAY_LIGHT_8bits.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="DISPLAY_LIGHT_8bits.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="DISPLAY_LIGHT_8bits.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="DISPLAY_LIGHT_8bits.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DisplayCircular.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="DisplayCircular.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="DisplayCircular.xst"/>
@@ -98,11 +108,9 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="main_input_processor.ngc"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="main_input_processor.ngd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="main_input_processor.ngr"/>
-    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="main_input_processor.pad"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="main_input_processor.par" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="main_input_processor.pcf" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="main_input_processor.prj"/>
-    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="main_input_processor.ptwx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="main_input_processor.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="main_input_processor.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="main_input_processor.twr" xil_pn:subbranch="Par"/>
@@ -110,22 +118,55 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="main_input_processor.unroutes" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="main_input_processor.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="main_input_processor.vf"/>
-    <file xil_pn:fileType="FILE_XPI" xil_pn:name="main_input_processor.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="main_input_processor.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="main_input_processor_8bits.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="main_input_processor_8bits.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="main_input_processor_8bits.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="main_input_processor_8bits.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="main_input_processor_8bits.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="main_input_processor_8bits.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="main_input_processor_8bits.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="main_input_processor_8bits.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="main_input_processor_8bits.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="main_input_processor_8bits.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="main_input_processor_8bits.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="main_input_processor_8bits.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="main_input_processor_8bits.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="main_input_processor_8bits.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="main_input_processor_8bits.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="main_input_processor_8bits.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="main_input_processor_8bits.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="main_input_processor_8bits.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="main_input_processor_8bits.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="main_input_processor_8bits.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="main_input_processor_8bits.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="main_input_processor_8bits.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="main_input_processor_8bits.vf"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="main_input_processor_8bits.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="main_input_processor_8bits.xst"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="main_input_processor_8bits_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="main_input_processor_8bits_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="main_input_processor_8bits_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="main_input_processor_8bits_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="main_input_processor_8bits_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="main_input_processor_8bits_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="main_input_processor_8bits_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="main_input_processor_8bits_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="main_input_processor_8bits_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="main_input_processor_8bits_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="main_input_processor_8bits_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="main_input_processor_8bits_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="main_input_processor_8bits_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="main_input_processor_8bits_xst.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="main_input_processor_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="main_input_processor_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="main_input_processor_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="main_input_processor_map.mrp" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="main_input_processor_map.ncd" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="main_input_processor_map.ngm" xil_pn:subbranch="Map"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="main_input_processor_map.xrpt"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="main_input_processor_ngdbuild.xrpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="main_input_processor_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="main_input_processor_pad.txt" xil_pn:subbranch="Par"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="main_input_processor_par.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="main_input_processor_summary.html"/>
-    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="main_input_processor_summary.xml"/>
-    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="main_input_processor_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="main_input_processor_xst.xrpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="main_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="main_map.mrp" xil_pn:subbranch="Map"/>
@@ -143,6 +184,7 @@
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_2"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_3"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_4"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
@@ -154,110 +196,109 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1730827737" xil_pn:in_ck="7696811686071483824" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1882830849281303327" xil_pn:start_ts="1730827734">
+    <transform xil_pn:end_ts="1730959458" xil_pn:in_ck="-3964970446520056808" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-8611222961569565558" xil_pn:start_ts="1730959456">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="main.vf"/>
       <outfile xil_pn:name="main_input_processor.vf"/>
+      <outfile xil_pn:name="main_input_processor_8bits.vf"/>
     </transform>
-    <transform xil_pn:end_ts="1730827737" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-7709579842463856040" xil_pn:start_ts="1730827737">
+    <transform xil_pn:end_ts="1730959458" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-7736587692627511967" xil_pn:start_ts="1730959458">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1730827737" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1730827737">
+    <transform xil_pn:end_ts="1730959458" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1730959458">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1730827737" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-9051053495899976861" xil_pn:start_ts="1730827737">
+    <transform xil_pn:end_ts="1730959458" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-4736605908433044340" xil_pn:start_ts="1730959458">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1730827737" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745955965653" xil_pn:start_ts="1730827737">
+    <transform xil_pn:end_ts="1730959458" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745955965653" xil_pn:start_ts="1730959458">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1730827737" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-8865312681062191838" xil_pn:start_ts="1730827737">
+    <transform xil_pn:end_ts="1730959458" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="5265885879318366123" xil_pn:start_ts="1730959458">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1730828070" xil_pn:in_ck="8154982444380659775" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="4864619678811795776" xil_pn:start_ts="1730828058">
+    <transform xil_pn:end_ts="1730959482" xil_pn:in_ck="-721885102785465356" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-8116657086452257303" xil_pn:start_ts="1730959458">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="main_input_processor.jhd"/>
-      <outfile xil_pn:name="main_input_processor.lso"/>
-      <outfile xil_pn:name="main_input_processor.ngc"/>
-      <outfile xil_pn:name="main_input_processor.ngr"/>
-      <outfile xil_pn:name="main_input_processor.prj"/>
-      <outfile xil_pn:name="main_input_processor.stx"/>
-      <outfile xil_pn:name="main_input_processor.syr"/>
-      <outfile xil_pn:name="main_input_processor.xst"/>
-      <outfile xil_pn:name="main_input_processor_xst.xrpt"/>
+      <outfile xil_pn:name="main_input_processor_8bits.jhd"/>
+      <outfile xil_pn:name="main_input_processor_8bits.lso"/>
+      <outfile xil_pn:name="main_input_processor_8bits.ngc"/>
+      <outfile xil_pn:name="main_input_processor_8bits.ngr"/>
+      <outfile xil_pn:name="main_input_processor_8bits.prj"/>
+      <outfile xil_pn:name="main_input_processor_8bits.stx"/>
+      <outfile xil_pn:name="main_input_processor_8bits.syr"/>
+      <outfile xil_pn:name="main_input_processor_8bits.xst"/>
+      <outfile xil_pn:name="main_input_processor_8bits_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1730827966" xil_pn:in_ck="4774924128945" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-4609919364368471115" xil_pn:start_ts="1730827966">
+    <transform xil_pn:end_ts="1730960213" xil_pn:in_ck="-2890823113190543015" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="5423696165008284318" xil_pn:start_ts="1730960213">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1730828085" xil_pn:in_ck="3550611847241478506" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="6907017337298417209" xil_pn:start_ts="1730828070">
+    <transform xil_pn:end_ts="1730960220" xil_pn:in_ck="9068510289143638111" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="5763724909726974274" xil_pn:start_ts="1730960213">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
-      <outfile xil_pn:name="main_input_processor.bld"/>
-      <outfile xil_pn:name="main_input_processor.ngd"/>
-      <outfile xil_pn:name="main_input_processor_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="main_input_processor_8bits.bld"/>
+      <outfile xil_pn:name="main_input_processor_8bits.ngd"/>
+      <outfile xil_pn:name="main_input_processor_8bits_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1730828101" xil_pn:in_ck="3550611847241478507" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="6093601622908603872" xil_pn:start_ts="1730828085">
+    <transform xil_pn:end_ts="1730960264" xil_pn:in_ck="4167578343593450274" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="6093601622908603872" xil_pn:start_ts="1730960220">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
-      <outfile xil_pn:name="main_input_processor.pcf"/>
-      <outfile xil_pn:name="main_input_processor_map.map"/>
-      <outfile xil_pn:name="main_input_processor_map.mrp"/>
-      <outfile xil_pn:name="main_input_processor_map.ncd"/>
-      <outfile xil_pn:name="main_input_processor_map.ngm"/>
-      <outfile xil_pn:name="main_input_processor_map.xrpt"/>
-      <outfile xil_pn:name="main_input_processor_summary.xml"/>
-      <outfile xil_pn:name="main_input_processor_usage.xml"/>
+      <outfile xil_pn:name="main_input_processor_8bits.pcf"/>
+      <outfile xil_pn:name="main_input_processor_8bits_map.map"/>
+      <outfile xil_pn:name="main_input_processor_8bits_map.mrp"/>
+      <outfile xil_pn:name="main_input_processor_8bits_map.ncd"/>
+      <outfile xil_pn:name="main_input_processor_8bits_map.ngm"/>
+      <outfile xil_pn:name="main_input_processor_8bits_map.xrpt"/>
+      <outfile xil_pn:name="main_input_processor_8bits_summary.xml"/>
+      <outfile xil_pn:name="main_input_processor_8bits_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1730828130" xil_pn:in_ck="-883490762573693436" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-6780099238861732004" xil_pn:start_ts="1730828101">
+    <transform xil_pn:end_ts="1730960316" xil_pn:in_ck="-7681106134906882643" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-6780099238861732004" xil_pn:start_ts="1730960264">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
-      <outfile xil_pn:name="main_input_processor.ncd"/>
-      <outfile xil_pn:name="main_input_processor.pad"/>
-      <outfile xil_pn:name="main_input_processor.par"/>
-      <outfile xil_pn:name="main_input_processor.ptwx"/>
-      <outfile xil_pn:name="main_input_processor.unroutes"/>
-      <outfile xil_pn:name="main_input_processor.xpi"/>
-      <outfile xil_pn:name="main_input_processor_pad.csv"/>
-      <outfile xil_pn:name="main_input_processor_pad.txt"/>
-      <outfile xil_pn:name="main_input_processor_par.xrpt"/>
+      <outfile xil_pn:name="main_input_processor_8bits.ncd"/>
+      <outfile xil_pn:name="main_input_processor_8bits.pad"/>
+      <outfile xil_pn:name="main_input_processor_8bits.par"/>
+      <outfile xil_pn:name="main_input_processor_8bits.ptwx"/>
+      <outfile xil_pn:name="main_input_processor_8bits.unroutes"/>
+      <outfile xil_pn:name="main_input_processor_8bits.xpi"/>
+      <outfile xil_pn:name="main_input_processor_8bits_pad.csv"/>
+      <outfile xil_pn:name="main_input_processor_8bits_pad.txt"/>
+      <outfile xil_pn:name="main_input_processor_8bits_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1730828142" xil_pn:in_ck="-7833191252386399434" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1730828130">
+    <transform xil_pn:end_ts="1730960346" xil_pn:in_ck="-8701492672450798147" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1730960316">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
-      <outfile xil_pn:name="main_input_processor.bgn"/>
-      <outfile xil_pn:name="main_input_processor.bit"/>
-      <outfile xil_pn:name="main_input_processor.drc"/>
-      <outfile xil_pn:name="main_input_processor.ut"/>
+      <outfile xil_pn:name="main_input_processor_8bits.bgn"/>
+      <outfile xil_pn:name="main_input_processor_8bits.bit"/>
+      <outfile xil_pn:name="main_input_processor_8bits.drc"/>
+      <outfile xil_pn:name="main_input_processor_8bits.ut"/>
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1730828130" xil_pn:in_ck="3550611847241478375" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1730828119">
+    <transform xil_pn:end_ts="1730960316" xil_pn:in_ck="5454552576383938198" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1730960298">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
-      <outfile xil_pn:name="main_input_processor.twr"/>
-      <outfile xil_pn:name="main_input_processor.twx"/>
+      <outfile xil_pn:name="main_input_processor_8bits.twr"/>
+      <outfile xil_pn:name="main_input_processor_8bits.twx"/>
     </transform>
   </transforms>
 

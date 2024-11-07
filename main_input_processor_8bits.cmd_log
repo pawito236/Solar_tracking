@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/main_input_processor_8bits.xst" -ofn "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/main_input_processor_8bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main_input_processor_8bits.ucf -p xc6slx9-tqg144-3 main_input_processor_8bits.ngc main_input_processor_8bits.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_input_processor_8bits_map.ncd main_input_processor_8bits.ngd main_input_processor_8bits.pcf 
+par -w -intstyle ise -ol high -mt off main_input_processor_8bits_map.ncd main_input_processor_8bits.ncd main_input_processor_8bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml main_input_processor_8bits.twx main_input_processor_8bits.ncd -o main_input_processor_8bits.twr main_input_processor_8bits.pcf -ucf main_input_processor_8bits.ucf 
+bitgen -intstyle ise -f main_input_processor_8bits.ut main_input_processor_8bits.ncd 
