@@ -27,14 +27,8 @@
         <signal name="MN4_P88" />
         <signal name="L3_P79" />
         <signal name="L4_P78" />
-        <signal name="XLXN_70" />
-        <signal name="XLXN_71" />
-        <signal name="XLXN_72" />
-        <signal name="XLXN_73" />
         <signal name="XLXN_74" />
         <signal name="XLXN_75" />
-        <signal name="XLXN_76" />
-        <signal name="XLXN_77" />
         <signal name="L6_P74" />
         <signal name="L7_P67" />
         <signal name="XLXN_80" />
@@ -42,7 +36,7 @@
         <signal name="yDirOut" />
         <signal name="xDirOut" />
         <signal name="enSH" />
-        <signal name="SW3_P59" />
+        <signal name="SW0_P66" />
         <port polarity="Output" name="enXMotor" />
         <port polarity="Output" name="enYMotor" />
         <port polarity="Output" name="isEnXMotor" />
@@ -65,7 +59,7 @@
         <port polarity="Output" name="yDirOut" />
         <port polarity="Output" name="xDirOut" />
         <port polarity="Output" name="enSH" />
-        <port polarity="Input" name="SW3_P59" />
+        <port polarity="Input" name="SW0_P66" />
         <blockdef name="MOTOR_DRIVER_MAIN">
             <timestamp>2024-11-5T16:14:56</timestamp>
             <line x2="384" y1="32" y2="32" x1="320" />
@@ -172,7 +166,7 @@
             <blockpin signalname="xDirOut" name="O" />
         </block>
         <block symbolname="inv" name="XLXI_36">
-            <blockpin signalname="SW3_P59" name="I" />
+            <blockpin signalname="SW0_P66" name="I" />
             <blockpin signalname="enSH" name="O" />
         </block>
     </netlist>
@@ -340,10 +334,10 @@
         <branch name="enSH">
             <wire x2="1264" y1="1872" y2="1872" x1="1232" />
         </branch>
-        <branch name="SW3_P59">
+        <branch name="SW0_P66">
             <wire x2="1008" y1="1872" y2="1872" x1="976" />
         </branch>
         <iomarker fontsize="28" x="1264" y="1872" name="enSH" orien="R0" />
-        <iomarker fontsize="28" x="976" y="1872" name="SW3_P59" orien="R180" />
+        <iomarker fontsize="28" x="976" y="1872" name="SW0_P66" orien="R180" />
     </sheet>
 </drawing>

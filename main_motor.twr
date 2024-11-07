@@ -54,8 +54,8 @@ Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Inter
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 enXMotor    |         7.378(R)|      SLOW  |         3.829(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
 enYMotor    |         7.945(R)|      SLOW  |         4.233(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
-isEnXMotor  |         7.936(R)|      SLOW  |         4.161(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
-isEnYMotor  |         8.240(R)|      SLOW  |         4.386(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
+isEnXMotor  |         8.240(R)|      SLOW  |         4.386(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
+isEnYMotor  |         8.070(R)|      SLOW  |         4.194(R)|      FAST  |OSC_P123_BUFGP    |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock OSC_P123
@@ -70,19 +70,19 @@ Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-SW3_P59        |enSH           |    9.688|
+SW0_P66        |enSH           |    9.915|
 endXL          |L3_P79         |    8.556|
 endXR          |L4_P78         |    8.515|
-endYD          |MN3_P92        |    7.709|
+endYD          |MN3_P92        |    7.676|
 endYU          |MN4_P88        |    8.150|
 xDirIn         |L7_P67         |   10.317|
 xDirIn         |xDirOut        |    6.863|
-yDirIn         |L6_P74         |    9.924|
+yDirIn         |L6_P74         |    9.999|
 yDirIn         |yDirOut        |    6.418|
 ---------------+---------------+---------+
 
 
-Analysis completed Tue Nov  5 16:54:06 2024 
+Analysis completed Thu Nov  7 10:07:31 2024 
 --------------------------------------------------------------------------------
 
 Trace Settings:

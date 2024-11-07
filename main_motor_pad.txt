@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Tue Nov  5 16:53:50 2024
+Thu Nov  7 10:07:21 2024
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -78,14 +78,14 @@ Pinout by Pin Number:
 |P56       |           |IOBM     |IO_L30P_GCLK1_D13_2       |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P57       |           |IOBS     |IO_L14N_D12_2             |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P58       |           |IOBM     |IO_L14P_D11_2             |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
-|P59       |SW3_P59    |IOB      |IO_L13N_D10_2             |INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
+|P59       |           |IOBS     |IO_L13N_D10_2             |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P60       |           |IOBM     |IO_L13P_M1_2              |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P61       |           |IOBS     |IO_L12N_D2_MISO3_2        |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P62       |           |IOBM     |IO_L12P_D1_MISO2_2        |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P63       |           |         |VCCO_2                    |         |           |2             |          |         |           |         |2.50     |          |           |                |
 |P64       |           |IOBS     |IO_L3N_MOSI_CSI_B_MISO0_2 |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P65       |           |IOBM     |IO_L3P_D0_DIN_MISO_MISO1_2|UNUSED   |           |2             |          |         |           |         |         |          |           |                |
-|P66       |           |IOBS     |IO_L2N_CMPMOSI_2          |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
+|P66       |SW0_P66    |IOB      |IO_L2N_CMPMOSI_2          |INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |P67       |L7_P67     |IOB      |IO_L2P_CMPCLK_2           |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P68       |           |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
 |P69       |           |IOBS     |IO_L1N_M0_CMPMISO_2       |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
@@ -103,8 +103,8 @@ Pinout by Pin Number:
 |P81       |           |IOBM     |IO_L46P_1                 |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |P82       |           |IOBS     |IO_L45N_1                 |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |P83       |           |IOBM     |IO_L45P_1                 |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
-|P84       |isEnYMotor |IOB      |IO_L43N_GCLK4_1           |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
-|P85       |isEnXMotor |IOB      |IO_L43P_GCLK5_1           |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
+|P84       |isEnXMotor |IOB      |IO_L43N_GCLK4_1           |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
+|P85       |isEnYMotor |IOB      |IO_L43P_GCLK5_1           |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P86       |           |         |VCCO_1                    |         |           |1             |          |         |           |         |2.50     |          |           |                |
 |P87       |           |IOBS     |IO_L42N_GCLK6_TRDY1_1     |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |P88       |MN4_P88    |IOB      |IO_L42P_GCLK7_1           |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |

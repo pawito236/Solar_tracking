@@ -1,9 +1,10 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Nov 05 16:53:28 2024
+// Written by: Map P.20131013 on Thu Nov 07 10:07:07 2024
 //! **************************************************************************
 
 SCHEMATIC START;
-COMP "isEnYMotor" LOCATE = SITE "P84" LEVEL 1;
+COMP "isEnYMotor" LOCATE = SITE "P85" LEVEL 1;
+COMP "SW0_P66" LOCATE = SITE "P66" LEVEL 1;
 COMP "MN4_P88" LOCATE = SITE "P88" LEVEL 1;
 COMP "L7_P67" LOCATE = SITE "P67" LEVEL 1;
 COMP "endYD" LOCATE = SITE "P134" LEVEL 1;
@@ -17,9 +18,8 @@ COMP "yDirOut" LOCATE = SITE "P133" LEVEL 1;
 COMP "yDirIn" LOCATE = SITE "P7" LEVEL 1;
 COMP "enXMotor" LOCATE = SITE "P131" LEVEL 1;
 COMP "L3_P79" LOCATE = SITE "P79" LEVEL 1;
-COMP "SW3_P59" LOCATE = SITE "P59" LEVEL 1;
 COMP "L4_P78" LOCATE = SITE "P78" LEVEL 1;
-COMP "isEnXMotor" LOCATE = SITE "P85" LEVEL 1;
+COMP "isEnXMotor" LOCATE = SITE "P84" LEVEL 1;
 COMP "enSH" LOCATE = SITE "P139" LEVEL 1;
 COMP "OSC_P123" LOCATE = SITE "P123" LEVEL 1;
 COMP "enYMotor" LOCATE = SITE "P137" LEVEL 1;

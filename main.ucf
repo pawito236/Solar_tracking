@@ -46,8 +46,8 @@ NET "L6_P74" LOC = P74;
 NET "MN3_P92" LOC = P92;
 NET "MN4_P88" LOC = P88;
 
-NET "isEnXMotor" LOC = P85;
-NET "isEnYMotor" LOC = P84;
+NET "isEnXMotor" LOC = P84;
+NET "isEnYMotor" LOC = P85;
 
 #NET "MN6_P85" LOC = P85;
 #NET "MN7_P84" LOC = P84;
@@ -103,7 +103,7 @@ NET "enSH" LOC = P139;
 
 
 # --- SW ---
-NET "SW3_P59" LOC = P59;
+NET "SW0_P66" LOC = P66;
 
 
 # --- SW and DIP Test for end sw ---

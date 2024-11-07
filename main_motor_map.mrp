@@ -10,7 +10,7 @@ Target Device  : xc6slx9
 Target Package : tqg144
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Tue Nov  5 16:53:12 2024
+Mapped Date    : Thu Nov  7 10:07:00 2024
 
 Design Summary
 --------------
@@ -82,9 +82,9 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                2.64
 
-Peak Memory Usage:  754 MB
-Total REAL time to MAP completion:  16 secs 
-Total CPU time to MAP completion:   9 secs 
+Peak Memory Usage:  752 MB
+Total REAL time to MAP completion:  7 secs 
+Total CPU time to MAP completion:   6 secs 
 
 Table of Contents
 -----------------
@@ -155,7 +155,7 @@ Section 6 - IOB Properties
 | MN3_P92                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | MN4_P88                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | OSC_P123                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| SW3_P59                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| SW0_P66                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | enSH                               | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | enXMotor                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | enYMotor                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |

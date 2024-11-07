@@ -48,8 +48,8 @@ entity MOTOR_DRIVER_MAIN is
 end MOTOR_DRIVER_MAIN;
 
 architecture Behavioral of MOTOR_DRIVER_MAIN is
-    constant CLK_FREQ : integer := 20000000;      -- Clock frequency (50 MHz)
-    constant DELAY    : integer := CLK_FREQ / 2000;  -- 500 ms delay
+    constant CLK_FREQ : integer := 20000000;      -- Clock frequency (20 MHz)
+    constant DELAY    : integer := CLK_FREQ / 2000;  -- 0.5 ms delay
     signal counter    : integer := 0;             -- Counter for delay
 
     signal enX        : STD_LOGIC := '0';
@@ -73,14 +73,14 @@ begin
                 
             elsif state = PREPROCESS then
                 
-                -- if gx != "000" set enX = '1' to enable x-axis rotation
+                -- if gx != '0' set enX = '1' to enable x-axis rotation
                 if gx /= '0' then
                     enX <= '1';
 					 else
 						  enX <= '0';
                 end if;
                 
-                -- if gy != "000" set enY = '1' to enable y-axis rotation
+                -- if gy != '0' set enY = '1' to enable y-axis rotation
                 if gy /= '0' then
                     enY <= '1';
 					 else

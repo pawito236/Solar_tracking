@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : main_motor.vf
-// /___/   /\     Timestamp : 11/05/2024 16:44:40
+// /___/   /\     Timestamp : 11/07/2024 10:06:32
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -27,7 +27,7 @@ module main_motor(endXL,
                   gx, 
                   gy, 
                   OSC_P123, 
-                  SW3_P59, 
+                  SW0_P66, 
                   xDirIn, 
                   yDirIn, 
                   enSH, 
@@ -51,7 +51,7 @@ module main_motor(endXL,
     input gx;
     input gy;
     input OSC_P123;
-    input SW3_P59;
+    input SW0_P66;
     input xDirIn;
     input yDirIn;
    output enSH;
@@ -106,7 +106,7 @@ module main_motor(endXL,
                 .O(XLXN_53));
    INV  XLXI_35 (.I(XLXN_53), 
                 .O(L4_P78));
-   INV  XLXI_36 (.I(SW3_P59), 
+   INV  XLXI_36 (.I(SW0_P66), 
                 .O(enSH));
    INV  XLXI_52 (.I(yDirIn), 
                 .O(XLXN_74));
