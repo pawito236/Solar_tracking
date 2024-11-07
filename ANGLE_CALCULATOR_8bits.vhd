@@ -38,7 +38,10 @@ entity ANGLE_CALCULATOR_8bits is
         isdx        : out STD_LOGIC;                     -- Indicates if there is movement in X direction
         isdy        : out STD_LOGIC;                     -- Indicates if there is movement in Y direction
         xDir        : out STD_LOGIC;                     -- X direction (0: left, 1: right)
-        yDir        : out STD_LOGIC                      -- Y direction (0: down, 1: up)
+        yDir        : out STD_LOGIC;                      -- Y direction (0: down, 1: up)
+		  st			  : out STD_LOGIC_VECTOR(1 downto 0);
+		  address			  : out STD_LOGIC_VECTOR(1 downto 0);
+		  data			  : out STD_LOGIC_VECTOR(7 downto 0)
     );
 end ANGLE_CALCULATOR_8bits;
 
@@ -69,40 +72,49 @@ begin
             gy <= (others => '0');
             isdx <= '0';
             isdy <= '0';
-        elsif rising_edge(clk) then
+				st <= "00";
+				address <= "00";
+				data <= (others => '0');
+        elsif rising_edge(wr) then
             -- Main FSM to handle sensor data reading and movement calculation
+				address <= address_bus;
+				data <= databus;
             case state is
                 when READ_RT =>
                     -- Read Right Top Sensor (RT) when address is 00 and wr is high
-                    if wr = '1' and address_bus = "00" then
+                    if address_bus = "00" then
                         rti <= to_integer(unsigned(databus));
                         rts <= databus;                   -- Update output for RT sensor
                         state <= READ_RD;  -- Move to next state to read Right Down Sensor (RD)
                     end if;
+						  st <= "00";
 
                 when READ_RD =>
                     -- Read Right Down Sensor (RD) when address is 01 and wr is high
-                    if wr = '1' and address_bus = "01" then
+                    if address_bus = "01" then
                         rdi <= to_integer(unsigned(databus));
                         rds <= databus;                   -- Update output for RD sensor
                         state <= READ_LT;  -- Move to next state to read Left Top Sensor (LT)
                     end if;
+						  st <= "01";
 
                 when READ_LT =>
                     -- Read Left Top Sensor (LT) when address is 10 and wr is high
-                    if wr = '1' and address_bus = "10" then
+                    if address_bus = "10" then
                         lti <= to_integer(unsigned(databus));
                         lts <= databus;                   -- Update output for LT sensor
                         state <= READ_LD;  -- Move to next state to read Left Down Sensor (LD)
                     end if;
+						  st <= "10";
 
                 when READ_LD =>
                     -- Read Left Down Sensor (LD) when address is 11 and wr is high
-                    if wr = '1' and address_bus = "11" then
+                    if address_bus = "11" then
                         ldi <= to_integer(unsigned(databus));
                         lds <= databus;                   -- Update output for LD sensor
                         state <= CALCULATE;  -- Move to CALCULATE state once all sensors are read
                     end if;
+						  st <= "11";
 
                 when CALCULATE =>
                     -- Calculate averages for top, down, left, and right pairs of sensors

@@ -50,25 +50,43 @@ NET "wr" LOC = P132;
 
 
 
-NET "GX[7]" LOC = P67; //MSB
-NET "GX[6]" LOC = P74;
-NET "GX[5]" LOC = P75;
-NET "GX[4]" LOC = P78;
-NET "GX[3]" LOC = P79;
-NET "GX[2]" LOC = P80;
-NET "GX[1]" LOC = P81;
-NET "GX[0]" LOC = P82; //LSB
+NET "st[1]" LOC = P67; //MSB
+NET "st[0]" LOC = P74;
+NET "address[1]" LOC = P75;
+NET "address[0]" LOC = P78;
+NET "wr_sig" LOC = P79;
+#NET "GX[2]" LOC = P80;
+#NET "GX[1]" LOC = P81;
+#NET "GX[0]" LOC = P82; //LSB
+
+NET "data[7]" LOC = P84; //MSB
+NET "data[6]" LOC = P85;
+NET "data[5]" LOC = P87;
+NET "data[4]" LOC = P88;
+NET "data[3]" LOC = P92;
+NET "data[2]" LOC = P93;
+NET "data[1]" LOC = P94;
+NET "data[0]" LOC = P95; //LSB
 
 
 
-NET "GY[7]" LOC = P84; //MSB
-NET "GY[6]" LOC = P85;
-NET "GY[5]" LOC = P87;
-NET "GY[4]" LOC = P88;
-NET "GY[3]" LOC = P92;
-NET "GY[2]" LOC = P93;
-NET "GY[1]" LOC = P94;
-NET "GY[0]" LOC = P95; //LSB
+#NET "st[1]" LOC = P67; //MSB
+#NET "st[0]" LOC = P74;
+#NET "GX[5]" LOC = P75;
+#NET "GX[4]" LOC = P78;
+#NET "GX[3]" LOC = P79;
+#NET "GX[2]" LOC = P80;
+#NET "GX[1]" LOC = P81;
+#NET "GX[0]" LOC = P82; //LSB
+
+#NET "GY[7]" LOC = P84; //MSB
+#NET "GY[6]" LOC = P85;
+#NET "GY[5]" LOC = P87;
+#NET "GY[4]" LOC = P88;
+#NET "GY[3]" LOC = P92;
+#NET "GY[2]" LOC = P93;
+#NET "GY[1]" LOC = P94;
+#NET "GY[0]" LOC = P95; //LSB
 
 //MSB
 #NET "RT[2]" LOC = P101;

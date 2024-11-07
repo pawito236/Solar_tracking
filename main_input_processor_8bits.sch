@@ -25,6 +25,13 @@
         <signal name="SW0_P66" />
         <signal name="SEG(6:0)" />
         <signal name="COMMON(3:0)" />
+        <signal name="st(1:0)" />
+        <signal name="XLXN_21" />
+        <signal name="XLXN_22" />
+        <signal name="XLXN_25" />
+        <signal name="address(1:0)" />
+        <signal name="data(7:0)" />
+        <signal name="wr_sig" />
         <port polarity="Input" name="OSC_P123" />
         <port polarity="Input" name="wr" />
         <port polarity="Input" name="address_bus(1:0)" />
@@ -38,33 +45,10 @@
         <port polarity="Input" name="SW0_P66" />
         <port polarity="Output" name="SEG(6:0)" />
         <port polarity="Output" name="COMMON(3:0)" />
-        <blockdef name="ANGLE_CALCULATOR_8bits">
-            <timestamp>2024-11-7T5:46:33</timestamp>
-            <rect width="64" x="320" y="20" height="24" />
-            <line x2="384" y1="32" y2="32" x1="320" />
-            <rect width="64" x="320" y="84" height="24" />
-            <line x2="384" y1="96" y2="96" x1="320" />
-            <rect width="64" x="320" y="148" height="24" />
-            <line x2="384" y1="160" y2="160" x1="320" />
-            <rect width="64" x="320" y="212" height="24" />
-            <line x2="384" y1="224" y2="224" x1="320" />
-            <line x2="0" y1="-352" y2="-352" x1="64" />
-            <line x2="0" y1="-272" y2="-272" x1="64" />
-            <line x2="0" y1="-192" y2="-192" x1="64" />
-            <rect width="64" x="0" y="-124" height="24" />
-            <line x2="0" y1="-112" y2="-112" x1="64" />
-            <rect width="64" x="0" y="-44" height="24" />
-            <line x2="0" y1="-32" y2="-32" x1="64" />
-            <line x2="384" y1="-352" y2="-352" x1="320" />
-            <line x2="384" y1="-288" y2="-288" x1="320" />
-            <line x2="384" y1="-224" y2="-224" x1="320" />
-            <line x2="384" y1="-160" y2="-160" x1="320" />
-            <rect width="64" x="320" y="-108" height="24" />
-            <line x2="384" y1="-96" y2="-96" x1="320" />
-            <rect width="64" x="320" y="-44" height="24" />
-            <line x2="384" y1="-32" y2="-32" x1="320" />
-            <rect width="256" x="64" y="-384" height="640" />
-        </blockdef>
+        <port polarity="Output" name="st(1:0)" />
+        <port polarity="Output" name="address(1:0)" />
+        <port polarity="Output" name="data(7:0)" />
+        <port polarity="Output" name="wr_sig" />
         <blockdef name="DISPLAY_LIGHT_8bits">
             <timestamp>2024-11-7T5:57:41</timestamp>
             <rect width="256" x="64" y="-448" height="448" />
@@ -93,23 +77,48 @@
             <line x2="64" y1="-64" y2="-80" x1="64" />
             <line x2="64" y1="-128" y2="-96" x1="64" />
         </blockdef>
-        <block symbolname="ANGLE_CALCULATOR_8bits" name="XLXI_2">
-            <blockpin signalname="OSC_P123" name="clk" />
-            <blockpin signalname="XLXN_5" name="reset" />
-            <blockpin signalname="wr" name="wr" />
-            <blockpin signalname="address_bus(1:0)" name="address_bus(1:0)" />
-            <blockpin signalname="databus(7:0)" name="databus(7:0)" />
-            <blockpin signalname="isdx" name="isdx" />
-            <blockpin signalname="isdy" name="isdy" />
-            <blockpin signalname="xDir" name="xDir" />
-            <blockpin signalname="yDir" name="yDir" />
-            <blockpin signalname="GX(7:0)" name="gx(7:0)" />
-            <blockpin signalname="GY(7:0)" name="gy(7:0)" />
-            <blockpin signalname="XLXN_3(7:0)" name="rts(7:0)" />
-            <blockpin signalname="XLXN_1(7:0)" name="rds(7:0)" />
-            <blockpin signalname="XLXN_4(7:0)" name="lts(7:0)" />
-            <blockpin signalname="XLXN_2(7:0)" name="lds(7:0)" />
-        </block>
+        <blockdef name="inv">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-32" y2="-32" x1="0" />
+            <line x2="160" y1="-32" y2="-32" x1="224" />
+            <line x2="128" y1="-64" y2="-32" x1="64" />
+            <line x2="64" y1="-32" y2="0" x1="128" />
+            <line x2="64" y1="0" y2="-64" x1="64" />
+            <circle r="16" cx="144" cy="-32" />
+        </blockdef>
+        <blockdef name="ANGLE_CALCULATOR_8bits">
+            <timestamp>2024-11-7T7:13:58</timestamp>
+            <rect width="64" x="320" y="340" height="24" />
+            <line x2="384" y1="352" y2="352" x1="320" />
+            <rect width="64" x="320" y="404" height="24" />
+            <line x2="384" y1="416" y2="416" x1="320" />
+            <rect width="64" x="320" y="276" height="24" />
+            <line x2="384" y1="288" y2="288" x1="320" />
+            <rect width="64" x="320" y="20" height="24" />
+            <line x2="384" y1="32" y2="32" x1="320" />
+            <rect width="64" x="320" y="84" height="24" />
+            <line x2="384" y1="96" y2="96" x1="320" />
+            <rect width="64" x="320" y="148" height="24" />
+            <line x2="384" y1="160" y2="160" x1="320" />
+            <rect width="64" x="320" y="212" height="24" />
+            <line x2="384" y1="224" y2="224" x1="320" />
+            <line x2="0" y1="-352" y2="-352" x1="64" />
+            <line x2="0" y1="-272" y2="-272" x1="64" />
+            <line x2="0" y1="-192" y2="-192" x1="64" />
+            <rect width="64" x="0" y="-124" height="24" />
+            <line x2="0" y1="-112" y2="-112" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="384" y1="-352" y2="-352" x1="320" />
+            <line x2="384" y1="-288" y2="-288" x1="320" />
+            <line x2="384" y1="-224" y2="-224" x1="320" />
+            <line x2="384" y1="-160" y2="-160" x1="320" />
+            <rect width="64" x="320" y="-108" height="24" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
+            <rect width="64" x="320" y="-44" height="24" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+            <rect width="256" x="64" y="-384" height="832" />
+        </blockdef>
         <block symbolname="DISPLAY_LIGHT_8bits" name="XLXI_3">
             <blockpin signalname="OSC_P123" name="clk" />
             <blockpin signalname="XLXN_6" name="reset" />
@@ -127,10 +136,36 @@
         <block symbolname="gnd" name="XLXI_5">
             <blockpin signalname="XLXN_6" name="G" />
         </block>
+        <block symbolname="inv" name="XLXI_7">
+            <blockpin signalname="wr" name="I" />
+            <blockpin signalname="XLXN_21" name="O" />
+        </block>
+        <block symbolname="inv" name="XLXI_8">
+            <blockpin signalname="XLXN_21" name="I" />
+            <blockpin signalname="wr_sig" name="O" />
+        </block>
+        <block symbolname="ANGLE_CALCULATOR_8bits" name="XLXI_9">
+            <blockpin signalname="OSC_P123" name="clk" />
+            <blockpin signalname="XLXN_5" name="reset" />
+            <blockpin signalname="wr" name="wr" />
+            <blockpin signalname="address_bus(1:0)" name="address_bus(1:0)" />
+            <blockpin signalname="databus(7:0)" name="databus(7:0)" />
+            <blockpin signalname="isdx" name="isdx" />
+            <blockpin signalname="isdy" name="isdy" />
+            <blockpin signalname="xDir" name="xDir" />
+            <blockpin signalname="yDir" name="yDir" />
+            <blockpin signalname="XLXN_3(7:0)" name="rts(7:0)" />
+            <blockpin signalname="XLXN_1(7:0)" name="rds(7:0)" />
+            <blockpin signalname="XLXN_4(7:0)" name="lts(7:0)" />
+            <blockpin signalname="XLXN_2(7:0)" name="lds(7:0)" />
+            <blockpin signalname="GX(7:0)" name="gx(7:0)" />
+            <blockpin signalname="GY(7:0)" name="gy(7:0)" />
+            <blockpin signalname="st(1:0)" name="st(1:0)" />
+            <blockpin signalname="address(1:0)" name="address(1:0)" />
+            <blockpin signalname="data(7:0)" name="data(7:0)" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
-        <instance x="1232" y="1248" name="XLXI_2" orien="R0">
-        </instance>
         <instance x="2320" y="1296" name="XLXI_3" orien="R0">
         </instance>
         <branch name="XLXN_1(7:0)">
@@ -172,13 +207,20 @@
             <wire x2="2320" y1="880" y2="880" x1="1680" />
         </branch>
         <branch name="wr">
-            <wire x2="1232" y1="1056" y2="1056" x1="1200" />
+            <wire x2="1088" y1="1056" y2="1056" x1="912" />
+            <wire x2="1216" y1="1056" y2="1056" x1="1088" />
+            <wire x2="1232" y1="1056" y2="1056" x1="1216" />
+            <wire x2="1088" y1="672" y2="672" x1="1024" />
+            <wire x2="1024" y1="672" y2="768" x1="1024" />
+            <wire x2="1088" y1="768" y2="768" x1="1024" />
+            <wire x2="1088" y1="768" y2="1056" x1="1088" />
         </branch>
-        <iomarker fontsize="28" x="1200" y="1056" name="wr" orien="R180" />
         <branch name="address_bus(1:0)">
-            <wire x2="1232" y1="1136" y2="1136" x1="1200" />
+            <wire x2="480" y1="1136" y2="1136" x1="416" />
+            <wire x2="576" y1="1136" y2="1136" x1="480" />
+            <wire x2="1216" y1="1136" y2="1136" x1="576" />
+            <wire x2="1232" y1="1136" y2="1136" x1="1216" />
         </branch>
-        <iomarker fontsize="28" x="1200" y="1136" name="address_bus(1:0)" orien="R180" />
         <branch name="databus(7:0)">
             <wire x2="1232" y1="1216" y2="1216" x1="1200" />
         </branch>
@@ -220,5 +262,30 @@
             <wire x2="2736" y1="1264" y2="1264" x1="2704" />
         </branch>
         <iomarker fontsize="28" x="2736" y="1264" name="COMMON(3:0)" orien="R0" />
+        <branch name="st(1:0)">
+            <wire x2="1648" y1="1536" y2="1536" x1="1616" />
+        </branch>
+        <iomarker fontsize="28" x="1648" y="1536" name="st(1:0)" orien="R0" />
+        <iomarker fontsize="28" x="912" y="1056" name="wr" orien="R180" />
+        <instance x="1088" y="704" name="XLXI_7" orien="R0" />
+        <branch name="XLXN_21">
+            <wire x2="1344" y1="672" y2="672" x1="1312" />
+        </branch>
+        <instance x="1344" y="704" name="XLXI_8" orien="R0" />
+        <iomarker fontsize="28" x="416" y="1136" name="address_bus(1:0)" orien="R180" />
+        <instance x="1232" y="1248" name="XLXI_9" orien="R0">
+        </instance>
+        <branch name="address(1:0)">
+            <wire x2="1648" y1="1600" y2="1600" x1="1616" />
+        </branch>
+        <iomarker fontsize="28" x="1648" y="1600" name="address(1:0)" orien="R0" />
+        <branch name="data(7:0)">
+            <wire x2="1648" y1="1664" y2="1664" x1="1616" />
+        </branch>
+        <iomarker fontsize="28" x="1648" y="1664" name="data(7:0)" orien="R0" />
+        <branch name="wr_sig">
+            <wire x2="1600" y1="672" y2="672" x1="1568" />
+        </branch>
+        <iomarker fontsize="28" x="1600" y="672" name="wr_sig" orien="R0" />
     </sheet>
 </drawing>

@@ -1,7 +1,7 @@
 
 # PlanAhead Launch Script for Pre-Synthesis Floorplanning, created by Project Navigator
 
-create_project -name Solar_tracking -dir "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/planAhead_run_4" -part xc6slx9tqg144-3
+create_project -name Solar_tracking -dir "/home/ise/Share_with_VM_Digital/Project/Solar_tracking/planAhead_run_5" -part xc6slx9tqg144-3
 set_param project.pinAheadLayout yes
 set srcset [get_property srcset [current_run -impl]]
 set_property target_constrs_file "main_input_processor_8bits.ucf" [current_fileset -constrset]
